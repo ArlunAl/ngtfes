@@ -1,0 +1,109 @@
+@import "../templates/base";
+
+.stage_time_table {
+    .container-title {
+        h3 {
+            @media (max-width: 374px) {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .time_table {
+        display: flex;
+
+        td {
+            // border: 1px solid $white;
+            box-sizing: border-box;
+            color: $white;
+            background-color: $gray;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 0;
+        }
+        .break {
+            background-color: $white;
+        }
+
+        &-hall {
+            width: 40%;
+
+            .break_1 {
+                height: 30px;
+            }
+            .music {
+                height: 120px;
+            }
+            .break_2 {
+                height: 30px
+            }
+            .theater {
+                height: 120px;
+            }
+            .break_3 {
+                height: 180px;
+            }
+            .brass_band {
+                height: 120px;
+            }
+            .break_4 {
+                height: 60px;
+            }
+        }
+
+        &-time {
+            width: 20%;
+            margin-top: 25px;
+
+            td {
+                height: 120px;
+                background-color: $white;
+                color: $gray;
+            }
+            .fifteen {
+                height: 60px;
+            }
+        }
+
+        &-outdoor {
+            width: 40%;
+
+            .dance {
+                height: 30px;
+            }
+            .break_1 {
+                height: 50px;
+            }
+            .comedy {
+                height: 20px;
+            }
+            .break_2 {
+                height: 60px;
+            }
+            .song {
+                height: 20px;
+            }
+            .break_3 {
+                height: 130px;
+            }
+            .band {
+                height: 110px;
+            }
+            .dance_club {
+                height: 60px;
+            }
+            .break_4 {
+                height: 30px;
+            }
+            .claims_of_minors {
+                height: 60px;
+            }
+            .break_5 {
+                height: 40px;
+            }
+            .crossdressing {
+                height: 50px;
+            }
+        }
+    }
+}
