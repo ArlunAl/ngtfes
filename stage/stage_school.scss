@@ -1,33 +1,8 @@
-@import "../templates/base";
+@import "stage";
 
 .stage_time_table {
-    .container-title {
-        h3 {
-            @media (max-width: 374px) {
-                font-size: 40px;
-            }
-        }
-    }
-
     .time_table {
-        display: flex;
-
-        td {
-            // border: 1px solid $white;
-            box-sizing: border-box;
-            color: $white;
-            background-color: $gray;
-            text-align: center;
-            vertical-align: middle;
-            line-height: 0;
-        }
-        .break {
-            background-color: $white;
-        }
-
         &-hall {
-            width: 40%;
-
             .break_1 {
                 height: 30px;
             }
@@ -52,22 +27,12 @@
         }
 
         &-time {
-            width: 20%;
-            margin-top: 25px;
-
-            td {
-                height: 120px;
-                background-color: $white;
-                color: $gray;
-            }
             .fifteen {
                 height: 60px;
             }
         }
 
         &-outdoor {
-            width: 40%;
-
             .dance {
                 height: 30px;
             }
