@@ -2,40 +2,38 @@
 
 main {
     height: 1000px;
-    background-color: pink;
+    background-color: $white;
+}
+.open {
+    color: black;
 }
 
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes slidein {
-    0% {
-        top: 10%;
-    }
-    100% {
-        top: 5%;
-    }
-}
 
 #modal {
     .explanation {
-        display: none;
+        transition: opacity .3s, visibility .3s;
+        opacity: 0;
+        visibility: hidden;
+
+        .modal_window {
+            transition: top .3s;
+            top: 10%;
+            @media (min-width: 760px) {
+                top: 55%;
+            }
+        }
     }
 
     .explanation:target {
         .modal_window {
-            animation-name: slidein;
-            animation-duration: 0.3s;
+            top: 5%;
+
+            @media (min-width: 760px) {
+                top: 50%;
+            }
         }
-        animation-name: fadein; 
-        animation-duration: 0.3s;
-        display: block;
+        opacity: 1;
+        visibility: visible;
     }
 
     
@@ -101,6 +99,44 @@ main {
             display: block;
             margin: 3px 40%;
             line-height: 35px;
+        }
+
+        @media (min-width: 760px) {
+            top: 50%;
+            left: 15%;
+            height: auto;
+            width: 70%;
+            position: fixed;
+            transform: translate(0, -50%);
+            padding: 10px 20px;
+            box-sizing: border-box;
+
+            .modal_window-content {
+                display: -ms-flex;
+                display: flex;
+
+                p {
+                    padding: 0 0 10px 0;
+                }
+
+                .img_box {
+                    flex-shrink: 1.1;
+                }
+                .other_box {
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .modal_window-content {
+                p {
+                    font-size: 15px;
+                }
+            }
+            .modal_window-close_button {
+                line-height: 45px;
+            }
         }
     }
 }

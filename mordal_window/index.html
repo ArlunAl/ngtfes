@@ -57,19 +57,23 @@
 
 
   <main>
-    <a href="#sample">open</a>
+    <a class="open" href="#sample">open</a>
     <div id="modal">
 
-      <div id="sample" class="explanation">
+      <div id="sample" class="explanation first_hidden">
         <a class="close_overlay" href="#"></a>
         <div class="modal_window">
           <div class="modal_window-title">
             <h3>うひょおおお</h3>
           </div>
           <div class="modal_window-content">
-            <img src="../imgs/P3050409.jpg" alt="photo">
-            <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            <audio src="" controls></audio>
+            <div class="img_box">
+              <img src="../imgs/P3050409.jpg" alt="photo">
+            </div>
+            <div class="other_box">
+              <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+              <audio src="" controls></audio>
+            </div>
           </div>
           <a class="modal_window-close_button button" href="#">閉じる</a>
         </div>
@@ -124,7 +128,7 @@
     function switch_menu() {
       var menu = document.getElementById("menu");
       menu.classList.toggle("is_shown");
-      menu.classList.toggle("is_hidden");
+      // menu.classList.toggle("is_hidden");
       menu.classList.remove("first_hidden");
   
       var menu_icon = document.getElementById("menu_icon");
