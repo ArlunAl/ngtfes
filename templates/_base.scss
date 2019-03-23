@@ -135,8 +135,8 @@ body {
     display: flex;
 }
 
-
+@import "header";
 @import "keyframes";
 @import "nav";
-@import "header";
+@import "modal_window";
 @import "footer";

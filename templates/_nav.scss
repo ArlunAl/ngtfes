@@ -87,9 +87,8 @@
         // }
 
         &-container {
-            padding-top: 50px !important;
-            margin-top: 0 !important;
-            transform: translateY(20px);
+            padding-top: 50px;
+            margin-top: 0;
 
             &-title {
                 @media (max-height: 600px) {
