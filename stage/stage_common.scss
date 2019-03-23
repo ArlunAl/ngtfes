@@ -1,65 +1,76 @@
 @import "stage";
 
-.stage_time_table {
-    .time_table {
-        &-hall {
-            .break_1 {
-                height: 40px;
+@mixin time_table($minute) {
+    .stage_time_table {
+        .time_table {
+            &-hall {
+                .break_1 {
+                    height: $minute*20;
+                }
+                .theater {
+                    height: $minute*60;
+                }
+                .break_2 {
+                    height: $minute*35;
+                }
+                .brass_band {
+                    height: $minute*60;
+                }
+                .break_3 {
+                    height: $minute*15;
+                }
+                .music {
+                    height: $minute*60;
+                }
+                .break_4 {
+                    height: $minute*60;
+                }
+                .finale {
+                    height: $minute*20;
+                }
             }
-            .theater {
-                height: 120px;
-            }
-            .break_2 {
-                height: 70px
-            }
-            .brass_band {
-                height: 120px;
-            }
-            .break_3 {
-                height: 30px;
-            }
-            .music {
-                height: 120px;
-            }
-            .break_4 {
-                height: 120px;
-            }
-            .finale {
-                height: 40px;
-            }
-        }
 
-        &-time {
-            .fourteen {
-                height: 60px;
+            &-time {
+                td {
+                    height: ($minute*60);
+                }
+                .fourteen {
+                    height: $minute*30;
+                }
             }
-        }
 
-        &-outdoor {
-            .calligraphy {
-                height: 40px;
-            }
-            .break_1 {
-                height: 130px;
-            }
-            .dance_club {
-                height: 60px;
-            }
-            .break_2 {
-                height: 10px;
-            }
-            .arm_wrestling {
-                height: 120px;
-            }
-            .break_3 {
-                height: 150px;
-            }
-            .band {
-                height: 110px;
-            }
-            .finale {
-                height: 40px;
+            &-outdoor {
+                .calligraphy {
+                    height: $minute*20;
+                }
+                .break_1 {
+                    height: $minute*65;
+                }
+                .dance_club {
+                    height: $minute*30;
+                }
+                .break_2 {
+                    height: $minute*5;
+                }
+                .arm_wrestling {
+                    height: $minute*60;
+                }
+                .break_3 {
+                    height: $minute*75;
+                }
+                .band {
+                    height: $minute*55;
+                }
+                .finale {
+                    height: $minute*20;
+                }
             }
         }
     }
+}
+
+@include time_table(2px);
+
+@media (min-width: 760px) {
+    @include time_table(3px);
 }

@@ -1,74 +1,85 @@
 @import "stage";
 
-.stage_time_table {
-    .time_table {
-        &-hall {
-            .break_1 {
-                height: 30px;
+@mixin time_table($minute) {
+    .stage_time_table {
+        .time_table {
+            &-hall {
+                .break_1 {
+                    height: ($minute*15);
+                }
+                .music {
+                    height: ($minute*60);
+                }
+                .break_2 {
+                    height: ($minute*15)
+                }
+                .theater {
+                    height: ($minute*60);
+                }
+                .break_3 {
+                    height: ($minute*90);
+                }
+                .brass_band {
+                    height: ($minute*60);
+                }
+                .break_4 {
+                    height: ($minute*30);
+                }
             }
-            .music {
-                height: 120px;
+    
+            &-time {
+                td {
+                    height: ($minute*60);
+                }
+                .fifteen {
+                    height: ($minute*30);
+                }
             }
-            .break_2 {
-                height: 30px
-            }
-            .theater {
-                height: 120px;
-            }
-            .break_3 {
-                height: 180px;
-            }
-            .brass_band {
-                height: 120px;
-            }
-            .break_4 {
-                height: 60px;
-            }
-        }
-
-        &-time {
-            .fifteen {
-                height: 60px;
-            }
-        }
-
-        &-outdoor {
-            .dance {
-                height: 30px;
-            }
-            .break_1 {
-                height: 50px;
-            }
-            .comedy {
-                height: 20px;
-            }
-            .break_2 {
-                height: 60px;
-            }
-            .song {
-                height: 20px;
-            }
-            .break_3 {
-                height: 130px;
-            }
-            .band {
-                height: 110px;
-            }
-            .dance_club {
-                height: 60px;
-            }
-            .break_4 {
-                height: 30px;
-            }
-            .claims_of_minors {
-                height: 60px;
-            }
-            .break_5 {
-                height: 40px;
-            }
-            .crossdressing {
-                height: 50px;
+    
+            &-outdoor {
+                .dance {
+                    height: ($minute*15);
+                }
+                .break_1 {
+                    height: ($minute*25);
+                }
+                .comedy {
+                    height: ($minute*10);
+                }
+                .break_2 {
+                    height: ($minute*30);
+                }
+                .song {
+                    height: ($minute*10);
+                }
+                .break_3 {
+                    height: ($minute*65);
+                }
+                .band {
+                    height: ($minute*55);
+                }
+                .dance_club {
+                    height: ($minute*30);
+                }
+                .break_4 {
+                    height: ($minute*15);
+                }
+                .claims_of_minors {
+                    height: ($minute*30);
+                }
+                .break_5 {
+                    height: ($minute*20);
+                }
+                .crossdressing {
+                    height: ($minute*25);
+                }
             }
         }
     }
+}
+
+@include time_table(2px);
+
+@media (min-width: 760px) {
+    @include time_table(3px);
 }
