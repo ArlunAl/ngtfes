@@ -4,25 +4,12 @@
     background: none;
     height: 100vh;
 
-    // @media (min-width: 1000px) {
-    //     height: 100vh;
-    //     background-image: url("../imgs/top_image.png");
-    //     background-attachment: fixed;
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    //     background-size: cover;
-    // }
-
     h1 {
         font-size: 50px;
         font-family: $title;
         padding-top: 35px;
         line-height: 85px;
         color: rgba($white,0);
-        -webkit-animation-name: title_in;
-        -webkit-animation-delay: 2s;
-        -webkit-animation-duration: 0.2s;
-        -webkit-animation-fill-mode: forwards;
         animation-name: title_in;
         animation-delay: 2s;
         animation-duration: 0.2s;
@@ -34,7 +21,6 @@
         h1 {
             padding-top: 40px;
             line-height: 130px;
-            -webkit-animation-name: title_in_tablet;
             animation-name: title_in_tablet;
         }
     }
@@ -43,7 +29,6 @@
         h1 {
             text-align: right;
             line-height: 160px;
-            -webkit-animation-name: title_in_desktop;
             animation-name: title_in_desktop;
         }
     }
@@ -168,22 +153,6 @@
     }
 }
 
-
-// /* 基本のスタイル */
-// .about.delighter {
-//     transition: all .5s ease-out;
-//     transform: translateX(-100%);
-//     opacity: 0;
-// }
-
-// /* スタート時のスタイル */
-// .about.delighter.started {
-//     transform: none;
-//     opacity: 1;
-// }
-
-
-
 .payment {
     .image_box {
         width: 90%;
@@ -204,10 +173,7 @@
 
     @media (min-width: 600px) {
         .desktop {
-            display: -webkit-flex;
-            display: -moz-flex;
             display: -ms-flex;
-            display: -o-flex;
             display: flex;
         }
 
@@ -259,10 +225,7 @@
 
     @media (min-width: 760px) {
         .theme_song-info {
-            display: -webkit-flex;
-            display: -moz-flex;
             display: -ms-flex;
-            display: -o-flex;
             display: flex;
             padding-top: 50px;
 
@@ -305,13 +268,10 @@
 
 
 .delighter.delighter {
-    -webkit-transition: all .5s ease-out;
-    -webkit-transform: translateX(150%);
     transition: all .5s ease-out;
     transform: translateX(150%);
 }
 .delighter.delighter.started {
-    -webkit-transform: none;
     transform: none;
 }
 

@@ -180,9 +180,6 @@
     }
     
     .is_hidden {
-        -webkit-animation-name: menu_slideout;
-        -webkit-animation-duration: 0.2s;
-        -webkit-animation-fill-mode: forwards;
         animation-name: menu_slideout;
         animation-duration: 0.2s;
         animation-fill-mode: forwards;
@@ -193,24 +190,16 @@
     }
     
     .is_shown {
-        -webkit-animation-name: menu_slidein;
-        -webkit-animation-duration: 0.2s;
         animation-name: menu_slidein;
         animation-duration: 0.2s;
 
         
         @media (min-width: 1000px) {
-            -webkit-animation-name: menu_fadein;
-            -webkit-animation-duration: 0.2s;
-            -webkit-animation-fill-mode: forwards;
             animation-name: menu_fadein;
             animation-duration: 0.2s;
             animation-fill-mode: forwards;
     
             .container {
-                -webkit-animation-name: menu_char_fadein;
-                -webkit-animation-duration: 0.4s;
-                -webkit-animation-fill-mode: forwards;
                 animation-name: menu_char_fadein;
                 animation-duration: 0.4s;
                 animation-fill-mode: forwards;

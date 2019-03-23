@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>モーダル</title>
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
+  <link rel="stylesheet" href="../templates/reset.css">
+  <link rel="stylesheet" href="./index.min.css">
+  <link rel="shortcut icon" href="../imgs/favicon.ico" >
+</head>
+
+
+<body>
+  <nav class="nav">
+    <div id="menu_icon" class="menu_icon is_close" onclick="switch_menu()">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+    <div id="menu" class="menu is_hidden first_hidden" onclick="switch_menu()">
+      <div class="container menu-container">
+        <div class="container-title menu-container-title">
+          <h3>Menu</h3>
+          <span>メニューだよ。</span>
+        </div>
+
+        <ul class="menu-menu_buttons two_buttons">
+          <li><a href="../home.html">ホーム</a></li>
+          <li><a href="">インタビュー</a></li>
+        </ul>
+  
+        <h4>校内祭</h4>
+        <ul class="menu-menu_buttons three_buttons">
+          <li><a href="">校内地図</a></li>
+          <li><a href="">模擬店</a></li>
+          <li><a href="">ステージ</a></li>
+        </ul>
+  
+        <h4>一般祭</h4>
+        <ul class="menu-menu_buttons three_buttons">
+          <li><a href="">校内地図</a></li>
+          <li><a href="">模擬店</a></li>
+          <li><a href="">ステージ</a></li>
+        </ul>
+
+        <ul class="menu-share_buttons">
+          <li><a target="blank" href="http://twitter.com/share?url=https://ngtfes.info"><img src="../imgs/sns_icon/twitter.png" alt="Twitter"></a></li>
+          <li><a target="blank" href="https://www.facebook.com/sharer/sharer.php?u=https://ngtfes.info"><img src="../imgs/sns_icon/facebook.png" alt="FaceBook"></a></li>
+          <li><a target="blank" href="http://line.me/R/msg/text/?https://ngtfes.info"><img src="../imgs/sns_icon/line.png" alt="LINE"></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <a href="#sample">open</a>
+    <div id="modal">
+
+      <div id="sample" class="explanation">
+        <a class="close_overlay" href="#"></a>
+        <div class="modal_window">
+          <div class="modal_window-title">
+            <h3>うひょおおお</h3>
+          </div>
+          <div class="modal_window-content">
+            <img src="../imgs/P3050409.jpg" alt="photo">
+            <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+            <audio src="" controls></audio>
+          </div>
+          <a class="modal_window-close_button button" href="#">閉じる</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <footer class="footer">
+    <div class="container footer-inside">
+
+      <section class="footer-access">
+        <div class="footer-access-route">
+          <h4>長田高校</h4>
+          <section>
+            <h5>神戸高速線</h5>
+            <span>高速神戸駅から徒歩15分</span>
+          </section>
+          <section>
+            <h5>市営地下鉄</h5>
+            <span>長田駅から徒歩15分</span>
+          </section>
+          <section>
+            <h5>JR</h5>
+            <span>兵庫駅から市バス(4系統)で長田神社前<br>徒歩5分</span>
+          </section>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.3476875105953!2d135.1431847291915!3d34.67008629877766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000858f683ffc87%3A0x9f05c21ab04e7f09!2z5YW15bqr55yM56uL6ZW355Sw6auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1552483901762" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+  
+      <section class="footer-contact">
+        <h4>お問い合わせ</h4>
+        <table>
+          <tr>
+            <td>文化祭スタッフ</td>
+            <td><a target="blank" href="mailto:ngtfesstaff@gmail.com">Gmail</a></td>
+          </tr>
+          <tr>
+            <td class="next_topic">長田高校</td>
+            <td><a target="blank" href="http://www.hyogo-c.ed.jp/~nagata-hs/">ホームページ</a></td>
+          </tr>
+        </table>
+      </section>
+  
+      <span class="copyright">Copyright © 長田高校文化祭スタッフ All Rights Reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    function switch_menu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("is_shown");
+      menu.classList.toggle("is_hidden");
+      menu.classList.remove("first_hidden");
+  
+      var menu_icon = document.getElementById("menu_icon");
+      menu_icon.classList.toggle("is_open");
+      menu_icon.classList.toggle("is_close"); 
+    }
+  </script>
+  <script type="text/javascript" src="./script/delighters.min.js"></script>
+</body>
+</html>
+
+
