@@ -14,18 +14,15 @@
     }
 
     .explanation:target {
+        opacity: 1;
+        visibility: visible;
+
         .modal_window {
             top: 5%;
             @media (min-width: 760px) {
                 top: 50%;
             }
         }
-        .close_overlay {
-            opacity: 0.5;
-            visibility: visible;
-        }
-        opacity: 1;
-        visibility: visible;
     }
 
     span {
@@ -59,10 +56,8 @@
         height: 100%;
         position: fixed;
         background: black;
+        opacity: 0.5;
         z-index: 15;
-        transition: opacity .3s, visibility .3s;
-        opacity: 0;
-        visibility: hidden;
     
         a {
             width: 100%;
