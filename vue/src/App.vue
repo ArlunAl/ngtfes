@@ -1,24 +1,16 @@
 <template>
     <div id="app">
         <!-- <router-view /> -->
-        <Top />
+        <Home />
     </div>
 </template>
 
 <script>
-import Top from "./container/Top.vue"
+import Home from "./container/Home.vue"
 
 export default {
-    data() {
-        return {
-        }
-    },
     components: {
-        Top
+        Home,
     }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
