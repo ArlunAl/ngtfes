@@ -23,15 +23,41 @@ module.exports = {
                     loaders: {
                         scss: 'vue-style-loader!css-loader!sass-loader',
                     },
+                    
                 },
+                
             },
             {
                 test: /\.scss$/,
-                loader: "style-loader!css-loader!sass-loader"
+                // loader: "!!sass-loader",
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                    'postcss-loader',
+                    "sass-loader",
+                    // {
+                    //     loader: 'sass-loader',
+                    // },
+                
+                    // "style-loader",
+                    // "css-loader",
+                    // "sass-loader",
+                    {
+                        loader: 'sass-resources-loader',
+                        options: {
+                            resources: [
+                                path.resolve(__dirname, "./src/template/_definition.scss"),
+                            ],
+                        }
+                    },
+                ]
             },
             {
                 test: /\.css$/,
-                loader: "style-loader!css-loader",
+                use: [
+                    "style-loader",
+                    "css-loader"
+                ],
             },
             {
                 test: /\.(jpg|png)$/,
