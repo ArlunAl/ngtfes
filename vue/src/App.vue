@@ -1,11 +1,12 @@
 <template>
     <div id="app">
+        <!-- <router-view /> -->
         <Top />
     </div>
 </template>
 
 <script>
-import Top from "./template/Top.vue"
+import Top from "./container/Top.vue"
 
 export default {
     data() {
