@@ -127,7 +127,7 @@ export default {
   }
 }
 .menu-page-link-box {
-  margin-top: 20px
+  margin-top: 22px
 }
 
 .slide {

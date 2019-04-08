@@ -29,6 +29,8 @@ export default {
         font-family: $Anton;
     }
     &-desc {
+        display: inline-block;
+        margin-top: 2px;
         font-size: 15px;
         @media (min-width: 1000px) {
             font-size: 20px;

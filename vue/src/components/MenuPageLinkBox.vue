@@ -38,7 +38,7 @@ export default {
         &-link {
             display: inline-block;
             border: solid 1px $white;
-            padding: 22px 0px;
+            padding: 25px 0px;
             width: 100%;
             font-size: 20px;
             text-align: center;
