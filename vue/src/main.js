@@ -1,5 +1,6 @@
 import Vue from "vue"
 import App from "./App.vue"
+import router from "./router"
 // TODO: vue-router
 
 new Vue({
@@ -8,4 +9,5 @@ new Vue({
         App,
     },
     render: h => h(App),
+    router,
 })

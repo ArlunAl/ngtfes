@@ -1,6 +1,6 @@
 <template>
-    <div id="home">
-        <HomeMenu />
+    <div id="home-main">
+        <MenuMain />
         <HomeTop />
         <!-- <HomeHeader /> -->
         <!-- <HomeMain /> -->
@@ -12,12 +12,12 @@
 // import HomeHeader from "../components/home/HomeHeader.vue"
 // import HomeMain from "../components/home/HomeMain.vue"
 // import HomeHeader from "../components/home/HomeHeader.vue"
-import HomeMenu from"../components/HomeMenu.vue"
+import MenuMain from"../components/MenuMain.vue"
 import HomeTop from "../components/HomeTop.vue"
 
 export default {
     components: {
-        HomeMenu,
+        MenuMain,
         HomeTop,
     }
 }

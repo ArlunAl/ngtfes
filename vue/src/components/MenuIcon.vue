@@ -1,5 +1,5 @@
 <template>
-    <div class="home-menu-icon"
+    <div class="menu-icon"
         @click="toggleIsOpen()"
     >
         <MenuIconBar :class="{ 'is-open': isOpen }" />
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import MenuIconBar from "./HomeMenuIconBar.vue"
+import MenuIconBar from "./MenuIconBar.vue"
 
 export default {
     props: {
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home-menu-icon {
+.menu-icon {
     // HACK: 配置(マージン等)は親の責務では？
     position: fixed;
     right: 20px;
@@ -47,6 +47,7 @@ export default {
             margin-top: 13px;
             opacity: 1;
             &.is-open {
+                // QUESTION: opacityの処理は重い？
                 opacity: 0;
             }
         }
