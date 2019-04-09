@@ -1,18 +1,20 @@
 <template>
-  <div class="home-Header">
+  <div class="home-header">
     <HomeHeaderImage/>
-    <HomeHeaderHeading/>
+    <!-- <HomeHeaderHeading/> -->
   </div>
 </template>
 
 <script>
+// HACK: HomeHeaderImageというネーミングは良くないぞ、、。
+// HomeHeaderImage が HomeHeaderHeading まで背負ってるからな
 import HomeHeaderImage from "./HomeHeaderImage.vue";
-import HomeHeaderHeading from "./HomeHeaderHeading.vue";
+// import HomeHeaderHeading from "./HomeHeaderHeading.vue";
 
 export default {
   components: {
     HomeHeaderImage,
-    HomeHeaderHeading,
+    // HomeHeaderHeading,
   }
 };
 </script>

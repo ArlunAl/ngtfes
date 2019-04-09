@@ -17,14 +17,14 @@ export default {
 <style lang="scss" scoped>
 .home-header-heading {
     // QUESTION: margin-header を 親に置くべきか、どうか、、、
-    margin-header: 35px;
+    margin-top: 35px;
     line-height: 85px;
     font-size: 50px;
     font-family: $Anton;
     color: $white;
     // QUESTION: 1プロパティにつき1つメディアクエリ書いたほうがいいのか？長くなるか？
     @media (min-width: 760px) {
-        margin-header: 40px;
+        margin-top: 40px;
         line-height: 130px;
         font-size: 90px;
     }
