@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import HomeMain from "./container/HomeMain.vue"
+// import HomeCon from "./container/HomeMain.vue"
 
 export default {
-    components: {
-        HomeMain,
-    }
+    // components: {
+    //     HomeMain,
+    // }
 }
 </script>

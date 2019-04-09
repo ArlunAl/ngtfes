@@ -104,6 +104,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  user-select: none;
   &-box {
     margin: 38px auto 70px;
     width: 90%;

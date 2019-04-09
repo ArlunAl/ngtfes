@@ -1,18 +1,18 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import HomeMain from "./container/HomeMain.vue"
-import InterviewMain from"./container/InterviewMain.vue"
+import HomeContainer from "./container/HomeContainer.vue"
+import InterviewContainer from"./container/InterviewContainer.vue"
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: "/",
-    component: HomeMain,
+    component: HomeContainer,
   },
   {
     path: "/interview",
-    component: InterviewMain,
+    component: InterviewContainer,
   },
 ]
 

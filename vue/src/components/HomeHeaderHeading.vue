@@ -1,6 +1,6 @@
 <template>
     <transition name="slide-zoom-out" appear>
-        <h1 class="home-top-heading">
+        <h1 class="home-header-heading">
             72nd<br>
             Nagata<br>
             Festival
@@ -15,16 +15,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home-top-heading {
-    // QUESTION: margin-top を 親に置くべきか、どうか、、、
-    margin-top: 35px;
+.home-header-heading {
+    // QUESTION: margin-header を 親に置くべきか、どうか、、、
+    margin-header: 35px;
     line-height: 85px;
     font-size: 50px;
     font-family: $Anton;
     color: $white;
     // QUESTION: 1プロパティにつき1つメディアクエリ書いたほうがいいのか？長くなるか？
     @media (min-width: 760px) {
-        margin-top: 40px;
+        margin-header: 40px;
         line-height: 130px;
         font-size: 90px;
     }
