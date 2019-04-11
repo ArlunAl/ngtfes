@@ -8,26 +8,26 @@
         <div class="menu-page-box"
           v-show="isOpen"
         >
-          <ThemeHeading 
+          <BaseThemeHeading 
             :heading="'Menu'"
             :desc   ="'メニューだよ。'"
           />
 
-          <MenuPageLinkBox 
+          <TheMenuPageLinkBox 
             :textAndLinks="textAndLinks1"
           />
 
-          <h4 class="menu-page-nav-heading">
-            校内祭
-          </h4>
-          <MenuPageLinkBox 
+          <TheMenuPageHeading
+            :text="'校内祭'"
+          />
+          <TheMenuPageLinkBox 
             :textAndLinks="textAndLinks2"
           />
 
-          <h4 class="menu-page-nav-heading">
-            一般祭
-          </h4>
-          <MenuPageLinkBox 
+          <TheMenuPageHeading
+            :text="'一般祭'"
+          />
+          <TheMenuPageLinkBox 
             :textAndLinks="textAndLinks3"
           />
 
@@ -56,8 +56,11 @@
 </template>
 
 <script>
-import MenuPageLinkBox from "./MenuPageLinkBox.vue"
-import ThemeHeading from "../common/ThemeHeading.vue"
+// HACK: TheMenu"Page".vue はよくない。プレフィクスとしてPageが使われている
+// HACK: menu-page と manu-page-box を分けるべき
+import TheMenuPageLinkBox from "./TheMenuPageLinkBox.vue"
+import TheMenuPageHeading from "./TheMenuPageHeading.vue"
+import BaseThemeHeading   from "./BaseThemeHeading.vue"
 
 export default {
   props: {
@@ -83,8 +86,9 @@ export default {
     }
   },
   components: {
-    MenuPageLinkBox,
-    ThemeHeading,
+    TheMenuPageLinkBox,
+    TheMenuPageHeading,
+    BaseThemeHeading,
   }
 }
 </script>
@@ -121,30 +125,18 @@ export default {
       width: 700px;
     }   
   }
-  &-nav-heading {
-    margin-top: 30px;
-    font-size: 25px;
-    color: $white;
+  &-link-box {
+    margin-top: 22px
   }
 }
-.menu-page-link-box {
-  margin-top: 22px
-}
 
+// animation: slide 
 .slide {
   &-enter-active {
     animation: slide 0.2s 0s forwards;
   }
   &-leave-active {
     animation: slide 0.2s 0s forwards reverse;
-  }
-}
-.slide-up {
-  &-enter-active {
-    animation: slide-up 0.2s ease 0s forwards;
-  }
-  &-leave-active {
-    animation: slide-up 0.2s ease 0s forwards reverse;
   }
 }
 @keyframes slide {
@@ -164,6 +156,15 @@ export default {
       opacity: 1;
     }
   }    
+}
+// animation: slide-up
+.slide-up {
+  &-enter-active {
+    animation: slide-up 0.2s ease 0s forwards;
+  }
+  &-leave-active {
+    animation: slide-up 0.2s ease 0s forwards reverse;
+  }
 }
 @keyframes slide-up {
 }

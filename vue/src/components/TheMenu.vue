@@ -1,10 +1,11 @@
 <template>
-  <div class="menu-main">
-    <MenuIcon 
+  <div class="the-menu">
+    <TheMenuIcon 
       :isOpen="isOpen" 
       :toggleIsOpen="toggleIsOpen"
     />
-    <MenuPage
+
+    <TheMenuPage
       :isOpen="isOpen"
       :toggleIsOpen="toggleIsOpen"
     />
@@ -12,8 +13,8 @@
 </template>
 
 <script>
-import MenuIcon from "./MenuIcon.vue";
-import MenuPage from "./MenuPage.vue";
+import TheMenuIcon from "./TheMenuIcon.vue";
+import TheMenuPage from "./TheMenuPage.vue";
 
 export default {
   data() {
@@ -22,8 +23,8 @@ export default {
     };
   },
   components: {
-    MenuIcon,
-    MenuPage,
+    TheMenuIcon,
+    TheMenuPage,
   },
   methods: {
     toggleIsOpen() {

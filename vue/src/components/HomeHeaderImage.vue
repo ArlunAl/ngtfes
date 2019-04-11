@@ -16,6 +16,7 @@ export default {
 
 <style lang="scss" scoped>
 .home-header-image {
+    overflow: hidden;
     background: none;
     height: 100vh;
     &::before {

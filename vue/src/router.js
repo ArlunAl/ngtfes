@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import HomeContainer from "./container/HomeContainer.vue"
-import InterviewContainer from"./container/InterviewContainer.vue"
+import HomeContainer from "./page/PageHome.vue"
+import InterviewContainer from"./page/PageInterview.vue"
 
 Vue.use(VueRouter)
 
