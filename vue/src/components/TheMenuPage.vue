@@ -60,7 +60,7 @@
 // HACK: menu-page と manu-page-box を分けるべき
 import TheMenuPageLinkBox from "./TheMenuPageLinkBox.vue"
 import TheMenuPageHeading from "./TheMenuPageHeading.vue"
-import BaseThemeHeading   from "./BaseThemeHeading.vue"
+// import BaseThemeHeading   from "./BaseThemeHeading.vue"
 
 export default {
   props: {
@@ -88,7 +88,7 @@ export default {
   components: {
     TheMenuPageLinkBox,
     TheMenuPageHeading,
-    BaseThemeHeading,
+    // BaseThemeHeading,
   }
 }
 </script>

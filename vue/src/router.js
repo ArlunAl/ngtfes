@@ -1,18 +1,18 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import HomeContainer from "./page/PageHome.vue"
-import InterviewContainer from"./page/PageInterview.vue"
+import Vue           from 'vue';
+import VueRouter     from 'vue-router';
+import PageHome      from "./page/PageHome.vue"
+import PageInterview from "./page/PageInterview.vue"
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: "/",
-    component: HomeContainer,
+    component: PageHome,
   },
   {
     path: "/interview",
-    component: InterviewContainer,
+    component: PageInterview,
   },
 ]
 

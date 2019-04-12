@@ -1,20 +1,22 @@
 <template>
   <div class="home-main">
     <div class="home-main-box">
-      <HomeMainAbout />
-      <HomeMainPayment />
+      <HomeMainAbout class="home-main-child" />
+      <HomeMainPayment class="home-main-child" />
     </div>
   </div>
 </template>
 
 <script>
-import HomeMainAbout from "./HomeMainAbout.vue"
+import HomeMainAbout   from "./HomeMainAbout.vue"
+import HomeMainPayment from "./HomeMainPayment.vue"
 // import BaseThemeHeading from "./BaseThemeHeading.vue";
 // import HomeMainAboutDateTable from "./HomeMainAboutDateTable.vue"
 
 export default {
   components: {
     HomeMainAbout,
+    HomeMainPayment,
     // BaseThemeHeading,
     // HomeMainAboutDateTable,
   }
@@ -48,6 +50,14 @@ export default {
       // padding: 50px 20px;
     }
     font-family: $normal-font;
+  }
+  &-child {
+    &:not(:first-child) {
+      margin-top: 115px;
+      @media ( min-width: 1000px ) {
+        margin-top: 180px;
+      }
+    }
   }
 }
 </style>

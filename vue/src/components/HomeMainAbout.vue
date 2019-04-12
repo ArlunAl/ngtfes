@@ -9,8 +9,12 @@
     </h4>
     <HomeMainAboutDateTable/>
     <div class="home-main-about-text">
-      <p>校内祭は生徒のみとなっておりますが、一般祭はどなたでもお越しいただけます。</p>
-      <p>校内祭と一般祭では模擬店やステージ内容が変更されておりますので、ご注意ください。</p>
+      <BaseText :text="'\
+        校内祭は生徒のみとなっておりますが、一般祭はどなたでもお越しいただけます。\n\
+        校内祭と一般祭では模擬店やステージ内容が変更されておりますので、ご注意ください。\
+      '" />
+      <!-- <p>校内祭は生徒のみとなっておりますが、一般祭はどなたでもお越しいただけます。</p>
+      <p>校内祭と一般祭では模擬店やステージ内容が変更されておりますので、ご注意ください。</p> -->
     </div>
     <div class="home-main-about-nav-list">
       <HomeMainAboutNav 
@@ -22,7 +26,7 @@
 </template>
 
 <script>
-import BaseThemeHeading       from "./BaseThemeHeading.vue"
+// import BaseThemeHeading       from "./BaseThemeHeading.vue"
 import HomeMainAboutDateTable from "./HomeMainAboutDateTable.vue"
 import HomeMainAboutNav       from "./HomeMainAboutNav.vue"
 
@@ -52,7 +56,7 @@ export default {
     }
   },
   components: {
-    BaseThemeHeading,
+    // BaseThemeHeading,
     HomeMainAboutDateTable,
     HomeMainAboutNav,
   }

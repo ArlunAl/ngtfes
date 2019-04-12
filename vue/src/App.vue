@@ -1,16 +1,16 @@
 <template>
     <div id="app">
         <router-view />
-        <!-- <HomeMain /> -->
+        <!-- <PageHome /> -->
     </div>
 </template>
 
 <script>
-// import HomeCon from "./container/HomeMain.vue"
+// import PageHome from "./page/PageHome.vue"
 
 export default {
-    // components: {
-    //     HomeMain,
-    // }
+    components: {
+        // PageHome,
+    }
 }
 </script>
