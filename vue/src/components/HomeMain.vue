@@ -3,13 +3,15 @@
     <div class="home-main-box">
       <HomeMainAbout class="home-main-child" />
       <HomeMainPayment class="home-main-child" />
+      <HomeMainB1GrandPrix class="home-main-child" />
     </div>
   </div>
 </template>
 
 <script>
-import HomeMainAbout   from "./HomeMainAbout.vue"
-import HomeMainPayment from "./HomeMainPayment.vue"
+import HomeMainAbout       from "./HomeMainAbout.vue"
+import HomeMainPayment     from "./HomeMainPayment.vue"
+import HomeMainB1GrandPrix from "./HomeMainB1GrandPrix.vue"
 // import BaseThemeHeading from "./BaseThemeHeading.vue";
 // import HomeMainAboutDateTable from "./HomeMainAboutDateTable.vue"
 
@@ -17,6 +19,7 @@ export default {
   components: {
     HomeMainAbout,
     HomeMainPayment,
+    HomeMainB1GrandPrix,
     // BaseThemeHeading,
     // HomeMainAboutDateTable,
   }
