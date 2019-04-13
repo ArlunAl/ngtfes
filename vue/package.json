@@ -1,7 +1,7 @@
 {
   "main": "main.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --history-api-fallback",
+    "build": "./node_modules/.bin/webpack",
     "dev": "./node_modules/.bin/webpack --mode development --history-api-fallback",
     "prod": "./node_modules/.bin/webpack --mode production --history-api-fallback",
     "start": "./node_modules/.bin/webpack-dev-server --mode development --history-api-fallback"

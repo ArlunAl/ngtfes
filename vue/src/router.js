@@ -17,6 +17,8 @@ const routes = [
 ]
 
 export default new VueRouter({
-  mode: 'history',
+  // QUESTION: historyを使うと、--history-api-fallbackが必要になる。
+  // つまりサーバーがないと、history mode は使えない？
+  // mode: 'history',
   routes,
 });
