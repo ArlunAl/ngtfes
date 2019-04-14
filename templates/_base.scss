@@ -1,9 +1,3 @@
-@import "header";
-@import "keyframes";
-@import "nav";
-@import "modal_window";
-@import "footer";
-
 $theme: #e20700;
 $accent: #009db4;
 $white: #fafafa;
@@ -138,3 +132,10 @@ body {
     display: -ms-flex;
     display: flex;
 }
+
+
+@import "header";
+@import "keyframes";
+@import "nav";
+@import "modal_window";
+@import "footer";
