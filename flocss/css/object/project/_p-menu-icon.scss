@@ -1,14 +1,31 @@
 .p-menu-icon {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+    padding: 10px;
+    width: 34px;
+    height: 32px;
     &__bar {
-        
+        height: 2px;
+        width: 34px;
+        background-color: $theme;
+        border-radius: 1px;
+        transform-origin: left center;
+        transition: all 0.2s;
+        &:not(:first-child) {
+            margin-top: 13px;
+        }
     }
-    &__bar.-top {
-
+    &__bar.-top.is-open {
+        transform: translateY(-1.2px) rotate(45deg);
+        width: 45px;
     }
-    &__bar.-middle {
-        
+    &__bar.-middle.is-open {
+        opacity: 0;
     }
-    &__bar.-bottom {
-        
+    &__bar.-bottom.is-open {
+        transform: translateY(1.2px) rotate(-45deg);
+        width: 45px;
     }
 }

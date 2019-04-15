@@ -12,11 +12,11 @@
 
 <body>
   <div class="l-menu">
-    <div class="p-menu">
-      <div class="p-menu-icon">
-        <span class="p-menu-icon__bar -top"></span>
-        <span class="p-menu-icon__bar -middle"></span>
-        <span class="p-menu-icon__bar -bottom"></span>
+    <!-- <div class="p-menu"> -->
+      <div id="p-menu-icon" class="p-menu-icon" onclick="switch_menu()">
+        <div class="p-menu-icon__bar -top"></div>
+        <div class="p-menu-icon__bar -middle"></div>
+        <div class="p-menu-icon__bar -bottom"></div>
       </div>
       <div class="p-menu-page">
         <!-- <div id="menu" class="menu is_hidden first_hidden" onclick="switch_menu()"> -->
@@ -107,8 +107,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    <!-- </div> -->
   </div>
   <header class="l-header">
 
@@ -119,6 +118,22 @@
   <footer class="l-footer">
 
   </footer>
+
+  <script>
+    // menu
+    function switch_menu() {
+      let menu_page = document.getElementsByClassName('p-menu-page');
+      menu_page.item(0).classList.toggle("is-open");
+      let menu_page_box = document.getElementsByClassName('p-menu-page__box');
+      menu_page_box.item(0).classList.toggle("is-open");
+
+  
+      let menu_icon_bars = document.getElementsByClassName('p-menu-icon__bar');
+      for (let i=0; i < 3; i++) {
+        menu_icon_bars.item(i).classList.toggle("is-open");
+      }
+    };
+  </script>
 </body>
 
 </html>

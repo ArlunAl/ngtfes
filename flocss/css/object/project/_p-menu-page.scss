@@ -1,4 +1,22 @@
 .p-menu-page {
+    position: fixed;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/menu_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease;
+    // NOTICE: "max"-width に注意。
+    // アニメーションの分岐点
+    @media (max-width:1000px) {
+        transform: translateX(100%);
+    }
+    @media (min-width: 1000px) {
+        opacity: 0;
+    }
+
     &__box {
         margin: 40px 20px 0px;
         // QUESTION: 細かすぎないか
@@ -19,14 +37,34 @@
         @media (min-width: 1000px) {
             width: 900px;
         }
+        @media (min-width: 1000px) {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        transition: all 0.2s ease;
+    }
+    &__box.is-open {
+        @media (min-width: 1000px) {
+            transform: translateY(0px);
+            opacity: 1;
+        }
     }
     &__heading {
 
     }
     &__sections {
-        margin-top: 20px;
+        margin-top: 40px;
     }
     &__share {
         margin-top: 30px;
+    }
+}
+.p-menu-page.is-open {
+    // NOTICE: "max"-width に注意。
+    @media (max-width: 1000px) {
+        transform: translateX(0%);
+    }
+    @media (min-width: 1000px) {
+        opacity: 1;
     }
 }
