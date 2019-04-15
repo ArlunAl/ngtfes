@@ -19,7 +19,13 @@
         - paddingで空間を作らないようにする
     - clickの当たり判定などはpaddingで指定する(marginではできない)
 
-#### css
+#### scssからcssへのコンパイル
+
+<!-- 
+長いね！ごめんよ！
+要するにscss->cssに変えたいんだけど@import先の変更も見て欲しいから
+node-sassってのを使いたいんだ！ 
+-->
 
 - *npm*([node.js](https://nodejs.org/ja/)についてくる)をダウンロードandインストール
     - npm: javascript用のモジュール管理ツール(pythonのpip)
