@@ -19,6 +19,20 @@
         - paddingで空間を作らないようにする
     - clickの当たり判定などはpaddingで指定する(marginではできない)
 
+#### css
+
+- *npm*([node.js](https://nodejs.org/ja/)についてくる)をダウンロードandインストール
+    - npm: javascript用のモジュール管理ツール(pythonのpip)
+- *node-sass*というモジュールを使用(インストール済み)
+    - scssをwatch(後述)して自動コンパイルしてくれる
+- `ngtfes/flocss`で`npx node-sass css/style.scss css/style.css -w`を実行
+    - *npx*はnpmのコマンド。インストールしたモジュールを使用する
+        - node-sassは指定したファイルをcssにコンパイルする
+    - *node-sass* は実行モジュールの指定
+    - *css/style.scss*はコンパイルしたいscssファイル名
+    - *css/style.css*はコンパイル後のcssファイル名
+    - *-w*は**watchモード**の指定
+        - watchモード: コンパイルしたいファイルandそのファイルで@importしているファイルに変更があった時に、自動でコンパイルする
 
 #### html 構造
 
