@@ -1,0 +1,32 @@
+.p-menu-page {
+    &__box {
+        margin: 40px 20px 0px;
+        // QUESTION: 細かすぎないか
+        @media (min-width: 376px) {
+            margin: 40px auto 0px;
+            width: 335px;
+        }
+        @media (min-width: 480px) {
+            width: 420px;
+        }
+        @media (min-width: 600px) {
+            width: 520px;
+        }
+        @media (min-width: 760px) {
+            width: 700px;
+        }
+        // QUESTION: なくても綺麗では？
+        @media (min-width: 1000px) {
+            width: 900px;
+        }
+    }
+    &__heading {
+
+    }
+    &__sections {
+        margin-top: 20px;
+    }
+    &__share {
+        margin-top: 30px;
+    }
+}

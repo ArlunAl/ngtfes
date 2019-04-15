@@ -1,0 +1,17 @@
+.p-theme-heading {
+    color: $theme;
+    &__text {
+        font-family: $font-Anton;
+        font-size: 50px;
+        @media (min-width: 1000px) {
+            font-size: 70px;
+            // padding-bottom: 20px;
+        }
+    }
+    &__desc {
+        font-size: 15px;
+        @media (min-width: 1000px) {
+            font-size: 15px;
+        }
+    }
+}

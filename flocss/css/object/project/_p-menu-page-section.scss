@@ -1,0 +1,36 @@
+.p-menu-page-section {
+    &:not(:first-child) {
+        margin-top: 30px;
+    }
+    &__heading {
+        font-size: 25px;
+        color: $white;
+    }
+    &__list-wrapper { 
+        // リストの上にタイトルがある場合
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+    &__list { // block的な扱い?
+        list-style: none;
+        display: flex;
+    }
+    &__item {
+        height: 72px;
+        line-height: 72px; // vertical-aline: middle のため 
+        // display: inline-block;
+        flex: 1;
+    }
+    &__link {
+        // height: 100%;
+        // width: 100%;
+        font-size: 20px;
+        color: $white;
+        border: solid 1px $white;
+        transition: background-color 0.2s;
+        &:hover {
+            background-color: $accent;
+        }
+    }
+}
