@@ -1,0 +1,72 @@
+.p-top {
+    &__box {
+        margin-top: 35px;
+        @media (min-width: 760px) {
+            margin-top: 40px;
+        }
+    }
+    &__heading {
+        font-family: $font-Anton;
+        font-size: 50px;
+        line-height: 85px;
+        color: $white;
+        @media (min-width: 760px) {
+            font-size: 90px;
+            line-height: 130px;
+        }
+        @media (min-width: 1000px) {
+            text-align: right;
+            font-size: 120px;
+            line-height: 160px;
+        }
+        // 隠すため
+        transform: translateX(1000px);
+        animation: p-top__heading-zoom-out 0.2s 2s ease forwards;
+    }
+}
+
+// QUSTION: アニメーションをここにおくべきか
+@keyframes p-top__heading-zoom-out {
+    from {
+        transform: translateX(1000px);
+        // QUESTION: こういう書き方はできない？
+        // @media (min-width: 1000px) {
+        //     transform: translateX(-1000px);
+        // }
+        font-size: 500px;
+    }
+    to {
+        transform: translateX(0);
+        font-size: 50px;
+        // @media (min-width: 760px) {
+        //     font-size: 90px;
+        // }
+        // @media (min-width: 1000px) {
+        //     font-size: 120px;
+        // }
+    }
+}
+@media (min-width: 760px) {
+    @keyframes p-top__heading-zoom-out {
+        from {
+            transform: translateX(1000px);
+            font-size: 500px;
+        }
+        to {
+            transform: translateX(0);
+            font-size: 90px;
+        }
+    }
+}
+@media (min-width: 1000px) {
+    @keyframes p-top__heading-zoom-out {
+        from {
+            transform: translateX(-1000px);
+            font-size: 500px;
+        }
+        to {
+            transform: translateX(0);
+            font-size: 120px;
+        }
+    }
+}

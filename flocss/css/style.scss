@@ -7,6 +7,8 @@
 @import "./layout/l-header";
 @import "./layout/l-main";
 @import "./layout/l-menu";
+@import "./layout/l-top";
+@import "./layout/l-box";
 
 // object
 
@@ -15,12 +17,15 @@
 @import "./object/component/c-row-item";
 
 //-- project
+@import "./object/project/p-top";
 @import "./object/project/p-header";
+@import "./object/project/p-main";
 @import "./object/project/p-menu";
 @import "./object/project/p-menu-icon";
 @import "./object/project/p-menu-page";
 @import "./object/project/p-menu-page-section";
 @import "./object/project/p-menu-page-share";
 @import "./object/project/p-theme-heading";
+@import "./object/project/p-text";
 
 //-- utility

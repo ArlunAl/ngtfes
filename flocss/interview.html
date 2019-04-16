@@ -1,69 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
   <title>長田高校文化祭</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
-  <!-- <link rel="stylesheet" href="./templates/reset.css"> -->
   <link rel="stylesheet" href="./css/style.css">
-  <!-- <link rel="shortcut icon" href="./imgs/favicon.ico" > -->
 </head>
 
 <body>
   <div class="l-menu">
     <!-- <div class="p-menu"> -->
-      <div id="p-menu-icon" class="p-menu-icon" onclick="switch_menu()">
-        <div class="p-menu-icon__bar -top"></div>
-        <div class="p-menu-icon__bar -middle"></div>
-        <div class="p-menu-icon__bar -bottom"></div>
-      </div>
-      <div class="p-menu-page">
-        <!-- <div id="menu" class="menu is_hidden first_hidden" onclick="switch_menu()"> -->
-        <div class="p-menu-page__box">
-          <div class="p-menu-page__heading">
-            <div class="p-theme-heading">
-              <h3 class="p-theme-heading__text">Menu</h3>
-              <span class="p-theme-heading__desc">メニューだよ。</span>
+    <div id="p-menu-icon" class="p-menu-icon" onclick="switch_menu()">
+      <div class="p-menu-icon__bar -top"></div>
+      <div class="p-menu-icon__bar -middle"></div>
+      <div class="p-menu-icon__bar -bottom"></div>
+    </div>
+    <div class="p-menu-page">
+      <!-- <div id="menu" class="menu is_hidden first_hidden" onclick="switch_menu()"> -->
+      <div class="p-menu-page__box l-box">
+        <div class="p-menu-page__heading">
+          <div class="p-theme-heading">
+            <h3 class="p-theme-heading__text">Menu</h3>
+            <span class="p-theme-heading__desc">メニューだよ。</span>
+          </div>
+        </div>
+
+        <div class="p-menu-page__sections">
+          <div class="p-menu-page-section">
+            <div class="p-menu-page-section__list-wrapper">
+              <ul class="p-menu-page-section__list">
+                <li class="p-menu-page-section__item">
+                  <a class="p-menu-page-section__link c-button" href="">
+                    ホーム
+                  </a>
+                </li>
+                <li class="p-menu-page-section__item">
+                  <a class="p-menu-page-section__link c-button" href="">インタビュー</a>
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div class="p-menu-page__sections">
-            <div class="p-menu-page-section">
-              <div class="p-menu-page-section__list-wrapper">
-                <ul class="p-menu-page-section__list">
-                  <li class="p-menu-page-section__item">
-                    <a class="p-menu-page-section__link c-button" href="">
-                      ホーム
-                    </a>
-                  </li>
-                  <li class="p-menu-page-section__item">
-                    <a class="p-menu-page-section__link c-button" href="">インタビュー</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="p-menu-page-section">
-              <h4 class="p-menu-page-section__heading">校内祭</h4>
-              <div class="p-menu-page-section__list-wrapper">
-                <ul class="p-menu-page-section__list">
-                  <li class="p-menu-page-section__item">
-                    <a class="p-menu-page-section__link c-button" href="">校内地図</a>
-                  </li>
-                  <li class="p-menu-page-section__item">
-                    <a class="p-menu-page-section__link c-button" href="">模擬店</a>
-                  </li>
-                  <li class="p-menu-page-section__item">
-                    <a class="p-menu-page-section__link c-button" href="./stage/school.html">ステージ</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="p-menu-page-section">
-              <h4 class="p-menu-page-section__heading">一般祭</h4>
-              <div class="p-menu-page-section__list-wrapper"></div>
+          <div class="p-menu-page-section">
+            <h4 class="p-menu-page-section__heading">校内祭</h4>
+            <div class="p-menu-page-section__list-wrapper">
               <ul class="p-menu-page-section__list">
                 <li class="p-menu-page-section__item">
                   <a class="p-menu-page-section__link c-button" href="">校内地図</a>
@@ -72,41 +54,58 @@
                   <a class="p-menu-page-section__link c-button" href="">模擬店</a>
                 </li>
                 <li class="p-menu-page-section__item">
-                  <a class="p-menu-page-section__link c-button" href="./stage/common.html">ステージ</a>
+                  <a class="p-menu-page-section__link c-button" href="./stage/school.html">ステージ</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="p-menu-page__share">
-            <div class="p-menu-page-share">
-              <ul class="p-menu-page-share__list">
-                <li class="p-menu-page-share__item c-row-item">
-                  <a class="p-menu-page-share__link c-button" target="blank"
-                    href="http://twitter.com/share?url=https://ngtfes.com">
-                    <img class="p-menu-page-share__link-img" src="./assets/sns_icon/twitter.png" alt="Twitter">
-                  </a>
-                </li>
-                <!--
+
+          <div class="p-menu-page-section">
+            <h4 class="p-menu-page-section__heading">一般祭</h4>
+            <div class="p-menu-page-section__list-wrapper"></div>
+            <ul class="p-menu-page-section__list">
+              <li class="p-menu-page-section__item">
+                <a class="p-menu-page-section__link c-button" href="">校内地図</a>
+              </li>
+              <li class="p-menu-page-section__item">
+                <a class="p-menu-page-section__link c-button" href="">模擬店</a>
+              </li>
+              <li class="p-menu-page-section__item">
+                <a class="p-menu-page-section__link c-button" href="./stage/common.html">ステージ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-menu-page__share">
+          <div class="p-menu-page-share">
+            <ul class="p-menu-page-share__list">
+              <li class="p-menu-page-share__item c-row-item">
+                <a class="p-menu-page-share__link c-button" target="blank"
+                  href="http://twitter.com/share?url=https://ngtfes.com">
+                  <img class="p-menu-page-share__link-img" src="./assets/sns_icon/twitter.png" alt="Twitter">
+                </a>
+              </li>
+              <!--
                     --->
-                <li class="p-menu-page-share__item c-row-item">
-                  <a class="p-menu-page-share__link c-button" target="blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https://ngtfes.com">
-                    <img class="p-menu-page-share__link-img" src="./assets/sns_icon/facebook.png" alt="FaceBook">
-                  </a>
-                </li>
-                <!--
+              <li class="p-menu-page-share__item c-row-item">
+                <a class="p-menu-page-share__link c-button" target="blank"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://ngtfes.com">
+                  <img class="p-menu-page-share__link-img" src="./assets/sns_icon/facebook.png" alt="FaceBook">
+                </a>
+              </li>
+              <!--
                     --->
-                <li class="p-menu-page-share__item c-row-item">
-                  <a class="p-menu-page-share__link c-button" target="blank"
-                    href="http://line.me/R/msg/text/?https://ngtfes.com">
-                    <img class="p-menu-page-share__link-img" src="./assets/sns_icon/line.png" alt="LINE">
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="p-menu-page-share__item c-row-item">
+                <a class="p-menu-page-share__link c-button" target="blank"
+                  href="http://line.me/R/msg/text/?https://ngtfes.com">
+                  <img class="p-menu-page-share__link-img" src="./assets/sns_icon/line.png" alt="LINE">
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
     <!-- </div> -->
   </div>
   <header class="l-header">
@@ -127,9 +126,9 @@
       let menu_page_box = document.getElementsByClassName('p-menu-page__box');
       menu_page_box.item(0).classList.toggle("is-open");
 
-  
+
       let menu_icon_bars = document.getElementsByClassName('p-menu-icon__bar');
-      for (let i=0; i < 3; i++) {
+      for (let i = 0; i < 3; i++) {
         menu_icon_bars.item(i).classList.toggle("is-open");
       }
     };
