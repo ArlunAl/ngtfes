@@ -26,7 +26,7 @@ export default {
   font-size: 15px;
   line-height: 1.5;
   &:not(:first-child) {
-    padding-top: 20px;
+    margin-top: 20px;
   }
 }
 </style>
