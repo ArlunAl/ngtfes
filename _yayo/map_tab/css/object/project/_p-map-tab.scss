@@ -1,0 +1,55 @@
+.p-map-tab {
+    overflow: hidden;
+
+    &__radio-button {
+        display: none;
+    }
+    &__radio-label {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        @media (min-width: 1000px) {
+            width: 20%   
+        }
+        text-align: center;
+        font-size: 20px;
+        background-color: #d7d7d7;
+        color: #7c7c7c;
+        // border: solid 1px #b6b6b6;
+        box-sizing: border-box;
+    }
+    &__radio-button:checked + &__radio-label {
+        color: $black;
+        background-color: $white;
+    }
+    // -w1, -w2 はwidthが 1:2 という意味
+    // NOTICE: "max"-width
+    @media (max-width: 1000px) {
+        &__radio-label.-w2 {
+            width: 100%;
+        }
+        &__radio-label.-w1 {
+            width: 50%;
+        }
+    }
+    &__page {
+        overflow: hidden;
+        // position: relative;
+        // top: 0; 
+        // left: 0;
+        display: inline-block;
+        height: 120px;
+        width: 0%;
+        background-color: $white;
+        // transform: translate(100%);
+        // transition: all 0.2s ease-in;
+    }
+    &__radio-button.-one:checked ~ &__page.-one, 
+    &__radio-button.-two:checked ~ &__page.-two, 
+    &__radio-button.-three:checked ~ &__page.-three,
+    &__radio-button.-four:checked ~ &__page.-four,
+    &__radio-button.-five:checked ~ &__page.-five {
+        width: 100%;
+        // transform: translate(0%);
+    }
+}
