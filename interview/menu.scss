@@ -1,2 +1,18 @@
 @import "../templates/base";
 
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+
+    .icon {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        color: $gray;
+
+        img {
+            width: 130px;
+            height: 130px;
+        }
+    }
+}
