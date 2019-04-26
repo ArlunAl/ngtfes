@@ -1,6 +1,69 @@
 @import "../../templates/base";
 
 // みんなの色のクラス
+.zakku {
+    color: #42b6f4;
+}
+.nomi {
+    color: #ff0505;
+}
+.yagichin {
+    color: #ff7d05;
+}
+.chiharun {
+    color: #ff7d05;
+}
+.nonchan {
+    color: #05bcff;
+}
+.asumin {
+    color: #f20045;
+}
+.nrRoute {
+    color: #2687e8;
+}
+.siotaioukeisio {
+    color: #2ee869;
+}
+.arlun {
+    color: #ce000d;
+}
+.chartsiki {
+    color: #d00041;
+}
+.yuipon {
+    color: #9e42e5;
+}
+.nyugyu {
+    color: #68a2ff;
+}
+.ackey {
+    color: #a8bf93;
+}
+.shimon {
+    color: #0a0475;
+}
+.noppi {
+    color: #d782ff;
+}
+.koji {
+    color: #000000;
+}
+.okutan {
+    color: #000000;
+}
+.sakura {
+    color: #a409ed;
+}
+.otoki {
+    color: #3ae8ff;
+}
+.handakun {
+    color: #ff8623;
+}
+.be-to- {
+    color: #ff8623;
+}
 
 
 
@@ -44,6 +107,10 @@ header {
 
         .question {
             border-bottom: 1px solid $gray;
+        }
+
+        .name {
+            padding-right: 10px;
         }
     }
 }
