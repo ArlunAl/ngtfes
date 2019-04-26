@@ -15,7 +15,6 @@
         font-size: 20px;
         background-color: #d7d7d7;
         color: #7c7c7c;
-        // border: solid 1px #b6b6b6;
         box-sizing: border-box;
     }
     &__radio-button:checked + &__radio-label {
@@ -34,22 +33,60 @@
     }
     &__page {
         overflow: hidden;
-        // position: relative;
-        // top: 0; 
-        // left: 0;
-        display: inline-block;
-        height: 120px;
-        width: 0%;
+        display: none;
+        width: 100%;
         background-color: $white;
-        // transform: translate(100%);
-        // transition: all 0.2s ease-in;
     }
     &__radio-button.-one:checked ~ &__page.-one, 
     &__radio-button.-two:checked ~ &__page.-two, 
     &__radio-button.-three:checked ~ &__page.-three,
     &__radio-button.-four:checked ~ &__page.-four,
     &__radio-button.-five:checked ~ &__page.-five {
+        display: inline-block;
+    }
+    &__page-box {
+        display: flex;
+        align-items: center;
+        margin: 16px auto;
+        width: 80%;
+    }
+    &__page-list {
+        border-left: solid 2px $black;
+        border-right: solid 2px $black;
+        list-style: none;
+        box-sizing: border-box;
+        flex-basis: 84%;
+    }
+    &__page-item {
+        &:nth-child(n+2) {
+            margin-top: 2px;
+        }
+    }
+    &__page-link, &__page-text {
+        display: block;
+        text-align: center;
+        height: 52px;
+        line-height: 52px;
+    }
+    &__page-link {
+        margin: 0 8px;
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+        background-color: $gray;
+    }
+    &__page-text {
         width: 100%;
-        // transform: translate(0%);
+    }
+    &__page-text.-border {
+        border-top: solid 2px $black;
+        border-bottom: solid 2px $black;
+    }
+    &__page-map-text-box {
+    }
+    &__page-map-text {
+        text-align: center;
+        flex-basis: 16%;
+        font-size: 20px;
     }
 }

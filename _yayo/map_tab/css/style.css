@@ -106,13 +106,45 @@ input, select {
       width: 50%; } }
   .p-map-tab__page {
     overflow: hidden;
-    display: inline-block;
-    height: 120px;
-    width: 0%;
+    display: none;
+    width: 100%;
     background-color: #fafafa; }
   .p-map-tab__radio-button.-one:checked ~ .p-map-tab__page.-one,
   .p-map-tab__radio-button.-two:checked ~ .p-map-tab__page.-two,
   .p-map-tab__radio-button.-three:checked ~ .p-map-tab__page.-three,
   .p-map-tab__radio-button.-four:checked ~ .p-map-tab__page.-four,
   .p-map-tab__radio-button.-five:checked ~ .p-map-tab__page.-five {
+    display: inline-block; }
+  .p-map-tab__page-box {
+    display: flex;
+    align-items: center;
+    margin: 16px auto;
+    width: 80%; }
+  .p-map-tab__page-list {
+    border-left: solid 2px #000000;
+    border-right: solid 2px #000000;
+    list-style: none;
+    box-sizing: border-box;
+    flex-basis: 84%; }
+  .p-map-tab__page-item:nth-child(n+2) {
+    margin-top: 2px; }
+  .p-map-tab__page-link, .p-map-tab__page-text {
+    display: block;
+    text-align: center;
+    height: 52px;
+    line-height: 52px; }
+  .p-map-tab__page-link {
+    margin: 0 8px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #333333; }
+  .p-map-tab__page-text {
     width: 100%; }
+  .p-map-tab__page-text.-border {
+    border-top: solid 2px #000000;
+    border-bottom: solid 2px #000000; }
+  .p-map-tab__page-map-text {
+    text-align: center;
+    flex-basis: 16%;
+    font-size: 20px; }
