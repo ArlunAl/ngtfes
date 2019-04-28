@@ -31,13 +31,64 @@
     ---><input class="p-map-tab__radio-button -five" type="radio" id="p-map-tab__item__5" name="p-map-tab-item"><!--
     ---><label class="p-map-tab__radio-label -five -w1" for="p-map-tab__item__5">4F</label>
     <div class="p-map-tab__page -one">
-      abcde helloworld helloworld helloworld helloworld helloworld helloworld helloworld helloworld helloworld helloworld
+      <div class="p-map-tab__page-box">
+        <span class="p-map-tab__page-map-text">
+          校<br>
+          舎
+        </span>
+        <div class="p-map-tab__page-list -border-left -width-half">
+          <li class="p-map-tab__page-item">
+            <a href="#aiueo" class="p-map-tab__page-link -margin-left" onClick="preventScroll.enable()">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link -margin-left">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link -margin-left">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link -margin-left">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link -margin-left">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link -margin-left">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link -margin-left">あいうえお</a>
+          </li>
+        </div>
+        <div class="p-map-tab__page-list -width-half">
+          <li class="p-map-tab__page-item">
+            <a href="https://www.google.com/" class="p-map-tab__page-link">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link">あいうえお</a>
+          </li>
+          <li class="p-map-tab__page-item">
+            <a href="" class="p-map-tab__page-link">あいうえお</a>
+          </li>
+        </div>
+      </div>
     </div><!--
     ---><div class="p-map-tab__page -two">
       <div class="p-map-tab__page-box">
-        <ul class="p-map-tab__page-list">
+        <div class="p-map-tab__page-list -border">
           <li class="p-map-tab__page-item">
-            <a href="https://www.google.com/" class="p-map-tab__page-link">あいうえお</a>
+            <a href="" class="p-map-tab__page-link">あいうえお</a>
           </li>
           <li class="p-map-tab__page-item">
             <a href="" class="p-map-tab__page-link">あいうえお</a>
@@ -66,7 +117,7 @@
           <li class="p-map-tab__page-item">
             <span class="p-map-tab__page-text -border">階段</span>
           </li>
-        </ul><!--
+        </div><!--
         --->
         <!-- <div class="p-map-tab__page-map-text-box"> -->
           <span class="p-map-tab__page-map-text">
@@ -87,6 +138,49 @@
       uvwxyz helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
     </div>
   </div>
+  <div class="modal">
+    <div id="aiueo" class="explanation first_hidden">
+      <span class="span_1"></span>
+      <span class="span_2"></span>
+      <a class="close_overlay" href="#" onClick="preventScroll.disable()"></a>
+      <div class="modal_window">
+        <div class="modal_window-title">
+          <h3>うひょおおお</h3>
+        </div>
+        <div class="modal_window-content">
+          <div class="img_box">
+            <img src="../imgs/P3050409.jpg" alt="photo">
+          </div>
+          <div class="other_box">
+            <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+            <audio src="" controls></audio>
+          </div>
+        </div>
+        <a class="modal_window-close_button button" href="#" onClick="preventScroll.disable()">閉じる</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    var preventScroll={
+      x:0,
+      y:0,
+      setPos(x=window.pageXOffset,y=window.pageYOffset){
+        this.x=x;
+        this.y=y;
+      },
+      handleEvent(){
+        window.scrollTo(this.x,this.y);
+      },
+      enable(){
+        this.setPos();
+        window.addEventListener("scroll",this);
+      },
+      disable(){
+        window.removeEventListener("scroll",this);
+        this.setPos();
+      }
+    };
+  </script>
 </body>
 </html>
 

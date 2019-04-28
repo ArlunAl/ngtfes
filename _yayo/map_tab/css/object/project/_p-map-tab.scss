@@ -8,7 +8,7 @@
         display: inline-block;
         height: 50px;
         line-height: 50px;
-        @media (min-width: 1000px) {
+        @media (min-width: 760px) {
             width: 20%   
         }
         text-align: center;
@@ -23,7 +23,7 @@
     }
     // -w1, -w2 はwidthが 1:2 という意味
     // NOTICE: "max"-width
-    @media (max-width: 1000px) {
+    @media (max-width: 760px) {
         &__radio-label.-w2 {
             width: 100%;
         }
@@ -50,12 +50,30 @@
         margin: 16px auto;
         width: 80%;
     }
+    // ここをout-sideように拡張するのが辛い
+    // これが保守性が低いということだろう
     &__page-list {
-        border-left: solid 2px $black;
-        border-right: solid 2px $black;
+        display: flex;
+        flex-direction: column;
+        // @media (min-width: 760px) {
+        //     flex-direction: row;
+        // }
         list-style: none;
         box-sizing: border-box;
         flex-basis: 84%;
+    }
+    // &__page-list.-width-normal {
+    //     flex-basis: 84%;
+    // }
+    &__page-list.-width-half {
+        flex-basis: 42%;
+    }
+    &__page-list.-border {
+        border-left: solid 2px $black;
+        border-right: solid 2px $black;
+    }
+    &__page-list.-border-left {
+        border-left: solid 2px $black;
     }
     &__page-item {
         &:nth-child(n+2) {
@@ -74,6 +92,9 @@
         text-decoration: none;
         color: white;
         background-color: $gray;
+    }
+    &__page-link.-margin-left {
+        margin: 0 0 0 16px;
     }
     &__page-text {
         width: 100%;
