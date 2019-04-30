@@ -38,10 +38,10 @@
         </span>
         <div class="p-map-tab__page-list -border-left -width-half">
           <li class="p-map-tab__page-item">
-            <a href="#aiueo" class="p-map-tab__page-link -margin-left" onClick="preventScroll.enable()">あいうえお</a>
+            <a href="#modal" class="p-map-tab__page-link -margin-left" onClick="preventScroll.enable(); fillDataToModal(modal.sample)">あいうえお</a>
           </li>
           <li class="p-map-tab__page-item">
-            <a href="" class="p-map-tab__page-link -margin-left">あいうえお</a>
+            <a href="#modal" class="p-map-tab__page-link -margin-left"  onClick="preventScroll.enable(); fillDataToModal(modal.sample2)">あいうえお</a>
           </li>
           <li class="p-map-tab__page-item">
             <a href="" class="p-map-tab__page-link -margin-left">あいうえお</a>
@@ -138,21 +138,25 @@
       uvwxyz helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
     </div>
   </div>
+  <!-- WARN: モーダルの内容を変更した瞬間にチカッとする(上下に揺れる) -->
   <div class="modal">
-    <div id="aiueo" class="explanation first_hidden">
+    <div id="modal" class="explanation first_hidden">
       <span class="span_1"></span>
       <span class="span_2"></span>
       <a class="close_overlay" href="#" onClick="preventScroll.disable()"></a>
       <div class="modal_window">
         <div class="modal_window-title">
-          <h3>うひょおおお</h3>
+          <!-- class追加(js用) -->
+          <h3 class="modal_window-heading"></h3>
         </div>
         <div class="modal_window-content">
           <div class="img_box">
-            <img src="../imgs/P3050409.jpg" alt="photo">
+            <!-- class追加(js用) -->
+            <img class="modal_window-img" src="" alt="photo">
           </div>
           <div class="other_box">
-            <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+            <!-- class追加(js用) -->
+            <p class="modal_window-text"></p>
             <audio src="" controls></audio>
           </div>
         </div>
@@ -161,6 +165,28 @@
     </div>
   </div>
   <script>
+    var modal = {
+      sample: {
+        heading: "aiueo",
+        imgSrc: "./imgs/fruit.jpeg",
+        text: "faie;nwaiofnew@oiafwe",
+      },
+      sample2: {
+        heading: "kakikukeko",
+        imgSrc: "./imgs/animal.jpeg",
+        text: "fewma,eflknwe@apfjweoapmnokihpaisjdn;ak;lnew",
+      }
+    }
+    function fillDataToModal(modalData) {
+      let heading = document.getElementsByClassName("modal_window-heading")[0]
+      let text = document.getElementsByClassName("modal_window-text")[0]
+      let img = document.getElementsByClassName("modal_window-img")[0]
+      
+      // console.log(heading, img, text)
+      heading.textContent = modalData.heading
+      text.textContent    = modalData.text
+      img.setAttribute("src", modalData.imgSrc)
+    }
     var preventScroll={
       x:0,
       y:0,
