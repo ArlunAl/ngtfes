@@ -53,10 +53,24 @@
 }
 
 
-
-.about {
+.new {
     padding-top: 50px !important;
 
+    &-list {
+        line-height: 20px;
+
+        .date {
+            padding: 10px 10px 10px 0;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+        padding-top: 150px !important;
+    }
+}
+
+
+.about {
     h4 {
         line-height: 35px;
         padding-bottom: 30px;
@@ -142,8 +156,6 @@
     }
     
     @media (min-width: 1000px) {
-        padding-top: 150px !important;
-
         &-links {
             padding-bottom: 40px;
         }

@@ -68,6 +68,28 @@
     </div>
 
     <div class="to_be_background_color_white">
+      <section class="new container">
+        <div class="container-title" data-delighter>
+          <h3>New</h3>
+          <span>新着情報</span>
+        </div>
+
+        <div class="container-content" data-delighter>
+          <table class="new-list">
+            <tr>
+              <td class="date">2019/5/</td>
+              <td>ステージページ・インタビューページ公開</td>
+            </tr>
+            <tr>
+              <td class="date">2019/4/16</td>
+              <td>初回公開</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+
+
       <section class="about container">
         <div class="container-title" data-delighter>
           <h3>About</h3>
@@ -190,7 +212,6 @@
           <div class="theme_song-info">
             <h4 class="theme_song-info-title">熱源</h4>
             <span class="theme_song-info-artist">〜tree in pieces</span>
-            <audio src="./audio/netsugen.aac" controls preload="auto"></audio>
           </div>
     
           <p>長田生で構成されたバンド「tree in pieces」が文化祭のテーマソングを作ってくれました！</p>
@@ -258,18 +279,7 @@
     </div>
   </footer>
 
-  <script>
-    function switch_menu() {
-      var menu = document.getElementById("menu");
-      menu.classList.toggle("is_shown");
-      menu.classList.toggle("is_hidden");
-      menu.classList.remove("first_hidden");
-  
-      var menu_icon = document.getElementById("menu_icon");
-      menu_icon.classList.toggle("is_open");
-      menu_icon.classList.toggle("is_close"); 
-    };
-  </script>
+  <script type="text/javascript" src="./script/main.js"></script>
   <script type="text/javascript" src="./script/delighters.min.js"></script>
 </body>
 </html>

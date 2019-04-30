@@ -75,6 +75,6 @@
 
 @include time_table(2px);
 
-@media (min-width: 760px) {
-    @include time_table(3px);
-}
+// @media (min-width: 760px) {
+//     @include time_table(3px);
+// }

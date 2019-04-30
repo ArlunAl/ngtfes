@@ -25,7 +25,7 @@
         }
     }
 
-    span {
+    .close_icon {
         display: block;
         width: 30px;
         height: 2px;
@@ -42,10 +42,10 @@
             top: 30px;
         }
     }
-    .span_1 {
+    .close_icon1 {
         transform: rotate(45deg);
     }
-    .span_2 {
+    .close_icon2 {
         transform: rotate(135deg);
     }
 
@@ -67,10 +67,14 @@
     }
     
     .modal_window {
-        top: 5%;
+        // top: 5%;
+        // left: 5%;
+        // width: 90%;
+        // height: 90%;
+        top: 50%;
         left: 5%;
+        height: auto;
         width: 90%;
-        height: 90%;
         display: block;
         position: fixed;
         z-index: 20;
@@ -82,7 +86,12 @@
 
             h3 {
                 line-height: 33px;
-                font-size: 35px;
+                font-size: 25px;
+            }
+
+            &-first {
+                font-size: 40px;
+                color: $theme;
             }
 
             @media(min-width: 350px) {
@@ -96,16 +105,25 @@
             @media(min-width: 350px) {
                 padding: 0 10px;
             }
-
-            p {
-                font-size: 12px;
-                line-height: 20px;
-                padding-bottom: 10px;
+            .other_box {
+                p {
+                    font-size: 12px;
+                    line-height: 20px;
+                    padding: 0;
+                    margin-bottom: 10px;
+                }
+                &-info {
+                    border-bottom: $theme 1px solid;
+                }
             }
 
-            img {
-                width: 100%;
-                border-radius: 5px;
+            .img_box {
+                padding-bottom: 10px;
+
+                img {
+                    width: 100%;
+                    border-radius: 5px;
+                }
             }
         }
 
@@ -123,17 +141,16 @@
             a {
                 font-size: 20px;
                 color: $gray;
-                border-bottom: 1px solid $gray;
+                border-bottom: 1px solid $accent;
             }
             a:hover {
                 color: $accent;
-                border-color: $accent;
             }
         }
 
         &-close_button {
             display: block;
-            margin: 3px 40%;
+            margin: 3px 40% 10px 40%;
             line-height: 35px;
             border-radius: 5px;
         }
