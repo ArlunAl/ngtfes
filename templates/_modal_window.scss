@@ -67,10 +67,6 @@
     }
     
     .modal_window {
-        // top: 5%;
-        // left: 5%;
-        // width: 90%;
-        // height: 90%;
         top: 50%;
         left: 5%;
         height: auto;
@@ -156,9 +152,7 @@
         }
 
         @media (min-width: 760px) {
-            top: 50%;
             left: 15%;
-            height: auto;
             width: 70%;
             position: fixed;
             transform: translate(0, -50%);
