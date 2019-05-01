@@ -1,3 +1,29 @@
+// yayo
+history.replaceState('','','#');
+var modal = {
+  sample: {
+    heading: "aiueo",
+    imgSrc: "./imgs/fruit.jpeg",
+    text: "faie;nwaiofnew@oiafwe",
+  },
+  sample2: {
+    heading: "kakikukeko",
+    imgSrc: "./imgs/animal.jpeg",
+    text: "fewma,eflknwe@apfjweoapmnokihpaisjdn;ak;lnew",
+  }
+}
+function fillDataToModal(modalData) {
+  let heading = document.getElementsByClassName("modal_window-heading")[0]
+  let text = document.getElementsByClassName("modal_window-text")[0]
+  let img = document.getElementsByClassName("modal_window-img")[0]
+  
+  // console.log(heading, img, text)
+  heading.textContent = modalData.heading
+  text.textContent    = modalData.text
+  img.setAttribute("src", modalData.imgSrc)
+}
+// -----------------------
+
 function turnOnModal(modalId) {
     let modal = document.getElementById(modalId)
     modal.classList.add("is-visible")
@@ -26,6 +52,7 @@ var preventScroll={
       this.setPos();
     }
 };
+
 
 function switch_menu() {
     var menu = document.getElementById("menu");
