@@ -57,6 +57,11 @@
                 .arm_wrestling {
                     height: $minute*60;
                     line-height: $minute*60;
+                    letter-spacing: -2px;
+                    
+                    @media(min-width: 350px) {
+                        letter-spacing: 0px;
+                    }
                 }
                 .break_3 {
                     height: $minute*75;
