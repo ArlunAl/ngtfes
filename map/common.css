@@ -796,33 +796,44 @@ header h2 {
   border-left: solid 2px #333333;
 }
 
+.p-map-tab__page-item {
+  display: table;
+  margin: 0 4px;
+  height: 60px;
+}
+
 .p-map-tab__page-item:nth-child(n+2) {
   margin-top: 2px;
 }
 
+.p-map-tab__page-item.-margin-left {
+  margin-left: 8px;
+  margin-right: 0px;
+}
+
+.p-map-tab__page-item.-border {
+  margin-left: 0px;
+  margin-right: 0px;
+  border-top: solid 2px #333333;
+  border-bottom: solid 2px #333333;
+}
+
 .p-map-tab__page-link, .p-map-tab__page-text {
-  display: block;
+  display: table-cell;
   text-align: center;
-  height: 52px;
-  line-height: 52px;
+  vertical-align: middle;
+  font-size: 14px;
 }
 
 .p-map-tab__page-link {
-  margin: 0 8px;
-  font-size: 18px;
   text-decoration: none;
   color: #fafafa;
   background-color: #333333;
   transition: background-color 0.2s;
 }
 
-.p-map-tab__page-link.-margin-left {
-  margin: 0 0 0 16px;
-}
-
 .p-map-tab__page-link.-large {
-  height: 106px;
-  line-height: 106px;
+  height: 122px;
 }
 
 .p-map-tab__page-link.-background-light-gray {
@@ -835,12 +846,10 @@ header h2 {
 
 .p-map-tab__page-text {
   width: 100%;
-  font-size: 16px;
 }
 
-.p-map-tab__page-text.-border {
-  border-top: solid 2px #333333;
-  border-bottom: solid 2px #333333;
+.p-map-tab__page-text.-large {
+  height: 106px;
 }
 
 .p-map-tab__page-map-text {
