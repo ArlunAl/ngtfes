@@ -799,6 +799,7 @@ header h2 {
 .p-map-tab__page-item {
   margin: 0 4px;
   height: 60px;
+  line-height: 60px;
 }
 
 .p-map-tab__page-item:nth-child(n+2) {
@@ -818,6 +819,7 @@ header h2 {
 }
 
 .p-map-tab__page-item.-large {
+  line-height: 122px;
   height: 122px;
 }
 
@@ -872,13 +874,8 @@ header h2 {
 }
 
 .p-map-tab__page-text {
-  line-height: 60px;
+  height: 100%;
   width: 100%;
-}
-
-.p-map-tab__page-text.-large {
-  height: 106px;
-  line-height: 106px;
 }
 
 .p-map-tab__page-map-text {
