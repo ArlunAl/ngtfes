@@ -524,7 +524,7 @@ header h2 {
   font-size: 25px;
 }
 
-.modal .modal_window-title-first {
+.modal .modal_window-title::first-letter {
   font-size: 40px;
   color: #e20700;
 }
@@ -827,7 +827,7 @@ header h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 60%;
 }
 
 .p-map-tab__page-item-heading-box.-height-all {
@@ -842,7 +842,7 @@ header h2 {
   display: inline-block;
   text-align: right;
   vertical-align: middle;
-  height: 20%;
+  height: 40%;
   line-height: 1;
   width: 90%;
   font-size: 8px;
@@ -871,11 +871,6 @@ header h2 {
 
 .p-map-tab__page-link:hover {
   background-color: #009db4;
-}
-
-.p-map-tab__page-text {
-  height: 100%;
-  width: 100%;
 }
 
 .p-map-tab__page-map-text {
