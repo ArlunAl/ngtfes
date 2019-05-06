@@ -15,8 +15,8 @@ var modal = {
     heading: "kakikukeko",
     text: "fewma,eflknwe@apfjweoapmnokihpaisjdn;ak;lnew",
     links: [
-      { title: "to abc", link: "#abc" },
-      { title: "to def", link: "#def" },
+      { title: "to abc", onClick: "" },
+      { title: "to def", onClick: "" },
     ],
   },
   "あげみょん": {
@@ -107,11 +107,24 @@ var modal = {
     imgSrc: "",
     text: `今年の放送部の展示はラジオドラマです。戯曲「ロミオとジュリエット」より発想を飛ばし、高校生の男女の心の葛藤をテーマに制作しました。キャラクターデザインなどの設定資料も展示予定です。座る場所もご用意しておりますので、文化祭の息抜きなどに是非お立ち寄りくださいませ。`,
   },
+  // modal2
   "数学部・物理部": {
     heading: "数学部・物理部",
+    text: "数学部・物理部には以下の2団体が出演します！",
+    onClicks: [
+      { title: "数学部", onClick: "fillDataToModal(modal['数学部'])" },
+      { title: "物理部", onClick: "fillDataToModal(modal['物理部'])" },
+    ],
+  },
+  "数学部": {
+    heading: "数学部",
     imgSrc: "",
-    text: `数学部は毎週水曜日に活動。普段は数学の問題を解いたり、作成したりしていますが、時には数学そのものにも目を向けています。現在は５月の文化祭と１２月の文化部発表会の年２回部誌を発行しています。数学が好きな方もそうでない方も、ぜひ部誌を手にとってみてください。 
-    物理部では、実験企画・クイズ・キャップ投げ・自作ゲームなど、楽しみながら科学も学べる展示をたくさん用意しています。ぜひ来てください！`,
+    text: `数学部は毎週水曜日に活動。普段は数学の問題を解いたり、作成したりしていますが、時には数学そのものにも目を向けています。現在は５月の文化祭と１２月の文化部発表会の年２回部誌を発行しています。数学が好きな方もそうでない方も、ぜひ部誌を手にとってみてください。 `,
+  },
+  "物理部": {
+    heading: "物理部",
+    imgSrc: "",
+    text: `物理部では、実験企画・クイズ・キャップ投げ・自作ゲームなど、楽しみながら科学も学べる展示をたくさん用意しています。ぜひ来てください！ `,
   },
   "nagataWorld": {
     heading: "It's a Nagata world",
@@ -128,12 +141,26 @@ var modal = {
     imgSrc: "",
     text: `図書委員会では、委員おすすめの本の紹介や古本販売を行います！本好きの図書委員たちイチオシの面白い小説や楽しいエッセイを、手書きの文章で紹介します。紹介する本のいくつかは実際にその場に展示するので、ぱらぱらと立ち読みすることも可能です◎ぜひ見に来てください！`,
   },
-  "美術部・漫画研究系": {
-    heading: "美術部・漫画研究系",
+  // modal2
+  "美術部・漫画研究会": {
+    heading: "美術部・漫画研究会",
+    // imgSrc: "",
+    text: `美術部・漫画研究会には以下の2団体が出演します！`,
+    onClicks: [
+      { title: "美術部", onClick: "fillDataToModal(modal['美術部'])" },
+      { title: "漫画研究会", onClick: "fillDataToModal(modal['漫画研究会'])" },
+    ],
+  },
+  "美術部": {
+    heading: "美術部",
     imgSrc: "",
     text: `美術部は、油絵の展示、ワークショップ、また、漫画研究部と合同でポストカードの販売をしています。
-    ワークショップは昨年大反響だったレジンと、七宝焼の2つを行います。子どもから大人まで楽しめるコーナーとなっていますので、ぜひ見に来て、そして遊びに来てください！
-    漫画研究部では、部員の創作漫画を載せた部誌の販売。イラスト集、イラスぺの無料配布を予定しています。過去部誌の展示、らくがきスペースもございます。隙間時間の立ち読みでも構いません、是非1度お立ち寄りください！お待ちしています`,
+    ワークショップは昨年大反響だったレジンと、七宝焼の2つを行います。子どもから大人まで楽しめるコーナーとなっていますので、ぜひ見に来て、そして遊びに来てください！`,
+  },
+  "漫画研究会": {
+    heading: "漫画研究会",
+    imgSrc: "",
+    text: `漫画研究部では、部員の創作漫画を載せた部誌の販売。イラスト集、イラスぺの無料配布を予定しています。過去部誌の展示、らくがきスペースもございます。隙間時間の立ち読みでも構いません、是非1度お立ち寄りください！お待ちしています`,
   },
   "Tea・Tea": {
     heading: "Tea・Tea",
@@ -237,17 +264,17 @@ function fillDataToModal(modalData) {
 function fillDataToModal2(modalData) {
   let heading = document.getElementsByClassName("modal_window2-heading")[0]
   let text = document.getElementsByClassName("modal_window2-text")[0]
-  let link1 = document.getElementsByClassName("modal_window2-link1")[0]
-  let link2 = document.getElementsByClassName("modal_window2-link2")[0]
+  let onClick1 = document.getElementsByClassName("modal_window2-link1")[0]
+  let onClick2 = document.getElementsByClassName("modal_window2-link2")[0]
   
   // console.log(modalData.links[0])
   // console.log(heading, img, text)
   heading.textContent  = modalData.heading
   text.textContent     = modalData.text
-  link1.textContent    = modalData.links[0].title
-  link2.textContent    = modalData.links[1].title
-  link1.setAttribute("href", modalData.links[0].link)
-  link2.setAttribute("href", modalData.links[1].link)
+  onClick1.textContent    = modalData.onClicks[0].title
+  onClick2.textContent    = modalData.onClicks[1].title
+  onClick1.setAttribute("onClick", modalData.onClicks[0].onClick)
+  onClick2.setAttribute("onClick", modalData.onClicks[1].onClick)
 }
 // -----------------------
 
