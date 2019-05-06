@@ -524,7 +524,7 @@ header h2 {
   font-size: 25px;
 }
 
-.modal .modal_window-title-first {
+.modal .modal_window-title::first-letter {
   font-size: 40px;
   color: #e20700;
 }
