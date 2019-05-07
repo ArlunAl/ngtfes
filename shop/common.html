@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>長田高校文化祭</title>
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
+  <link rel="stylesheet" href="../templates/reset.css">
+  <link rel="stylesheet" href="./shop.min.css">
+  <link rel="shortcut icon" href="../imgs/favicon.ico" >
+</head>
+
+
+<body>
+  <nav class="nav">
+    <div id="menu_icon" class="menu_icon is_close" onclick="switch_menu()">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+    <div id="menu" class="menu is_hidden first_hidden" onclick="switch_menu()">
+      <div class="container menu-container">
+        <div class="container-title menu-container-title">
+          <h3>Menu</h3>
+          <span>メニューだよ。</span>
+        </div>
+
+        <ul class="menu-menu_buttons two_buttons">
+          <li><a href="../index.html">ホーム</a></li>
+          <li><a href="../interview/menu.html">インタビュー</a></li>
+        </ul>
+  
+        <h4>校内祭</h4>
+        <ul class="menu-menu_buttons three_buttons">
+          <li><a href="">校内地図</a></li>
+          <li><a href="">模擬店</a></li>
+          <li><a href="../stage/school.html">ステージ</a></li>
+        </ul>
+  
+        <h4>一般祭</h4>
+        <ul class="menu-menu_buttons three_buttons">
+          <li><a href="">校内地図</a></li>
+          <li><a href="">模擬店</a></li>
+          <li><a href="../stage/common.html">ステージ</a></li>
+        </ul>
+
+        <ul class="menu-share_buttons">
+          <li><a target="blank" href="http://twitter.com/share?url=https://ngtfes.com"><img src="../imgs/sns_icon/twitter.png" alt="Twitter"></a></li>
+          <li><a target="blank" href="https://www.facebook.com/sharer/sharer.php?u=https://ngtfes.com"><img src="../imgs/sns_icon/facebook.png" alt="FaceBook"></a></li>
+          <li><a target="blank" href="http://line.me/R/msg/text/?https://ngtfes.com"><img src="../imgs/sns_icon/line.png" alt="LINE"></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <header>
+    <h1>72nd Nagata Festival</h1>
+    <h2>模擬店（校内祭）</h2>
+  </header>
+
+
+  <main>
+    <div class="container outside">
+      <div class="container-title">
+        <h3>Play Booth</h3>
+        <span>体験型模擬</span>
+      </div>
+
+      <table class="shoplist">
+        <tbody class="shoplist-tbody">
+          <tr>
+            <th class="kind">サービス</td>
+            <th class="menu">種類</td>
+            <th class="price">価格</td>
+            <th class="group">団体</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="2">お化け屋敷</td>
+            <td class="sub_border">通常（1人）</td>
+            <td class="sub_border">100yen</td>
+            <td class="main_border" rowspan="2">2年1組＆2年7組</td>
+          </tr>
+          <tr class="main_border">
+            <td>カップル割（2人）</td>
+            <td>180yen</td>
+          </tr>
+
+          <tr class="main_border">
+            <td class="type">脱出ゲーム</td>
+            <td></td>
+            <td>120yen</td>
+            <td>2年2組＆2年5組</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="3">縁日</td>
+            <td class="sub_border">ラムネ</td>
+            <td class="sub_border">100yen</td>
+            <td class="main_border" rowspan="3">2年3組＆2年6組</td>
+          </tr>
+          <tr>
+            <td class="sub_border">1ゲーム</td>
+            <td class="sub_border">80yen</td>
+          </tr>
+          <tr class="main_border">
+            <td>3ゲーム</td>
+            <td>200yen</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="2">リアル人生ゲーム</td>
+            <td class="sub_border">長田生コース</td>
+            <td class="main_border" rowspan="2">100yen</td>
+            <td class="main_border" rowspan="2">2年4組</td>
+          </tr>
+          <tr>
+            <td class="main_border">天国と地獄コース</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="2">VR</td>
+            <td class="sub_border">通常</td>
+            <td class="sub_border">160yen</td>
+            <td class="main_border" rowspan="2">2年8組</td>
+          </tr>
+          <tr class="main_border">
+            <td>ファストパス</td>
+            <td>220yen</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+    <div class="container outside">
+      <div class="container-title">
+        <h3>Food Booth</h3>
+        <span>食品販売</span>
+      </div>
+
+      <table class="shoplist">
+        <tbody class="shoplist-tbody">
+          <tr>
+            <th class="kind">品物</td>
+            <th class="menu">種類</td>
+            <th class="price">値段</td>
+            <th class="allergy">アレルギー物質</td>
+            <th class="group">団体</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="5">唐揚げ</td>
+            <td class="sub_border">プレーン</td>
+            <td class="sub_border">120yen</td>
+            <td class="sub_border" rowspan="3">鶏肉、卵、乳、小麦</td>
+            <td class="main_border" rowspan="5">男子バドミントン部</td>
+          </tr>
+          <tr>
+            <td class="sub_border">レモン</td>
+            <td class="sub_border" rowspan="3">140yen</td>
+          </tr>
+          <tr>
+            <td class="sub_border">ゆずこしょう</td>
+          </tr>
+          <tr>
+            <td class="sub_border">マヨネーズ</td>
+            <td class="main_border" rowspan="2">鶏肉、卵、乳、小麦、大豆</td>
+          </tr>
+          <tr>
+            <td class="main_border">ミックス</td>
+            <td class="main_border">180yen</td>
+          </tr>
+
+          <tr>
+            <td class="main_border type">はしまき</td>
+            <td class="main_border"></td>
+            <td class="main_border">100yen</td>
+            <td class="main_border">卵、小麦、やまいも</td>
+            <td class="main_border">女子バドミントン部</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="2">揚げ饅頭</td>
+            <td class="sub_border">1個</td>
+            <td class="sub_border">80yen</td>
+            <td class="main_border" rowspan="2">牛乳、卵、小麦、大豆、落花生</td>
+            <td class="main_border" rowspan="2">男子ソフトテニス部</td>
+          </tr>
+          <tr>
+            <td class="main_border">2個</td>
+            <td class="main_border">100yen</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="3">大判焼き</td>
+            <td class="sub_border">あんこ</td>
+            <td class="main_border" rowspan="3">100yen</td>
+            <td class="main_border" rowspan="3">小麦、卵、牛乳</td>
+            <td class="main_border" rowspan="3">女子ソフトテニス部</td>
+          </tr>
+          <tr>
+            <td class="sub_border">カスタード</td>
+          </tr>
+          <tr>
+            <td class="main_border">チョコ</td>
+          </tr>
+
+          <tr>
+            <td class="main_border type">焼きそば</td>
+            <td class="main_border"></td>
+            <td class="main_border">200yen</td>
+            <td class="main_border">豚肉、小麦</td>
+            <td class="main_border">男子バレーボール部</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="4">チュロス</td>
+            <td class="sub_border">シュガー</td>
+            <td class="sub_border">80yen</td>
+            <td class="main_border" rowspan="4">乳、小麦、大豆</td>
+            <td class="main_border" rowspan="4">女子バレーボール部</td>
+          </tr>
+          <tr>
+            <td class="sub_border">メープル</td>
+            <td class="sub_border" rowspan="2">100yen</td>
+          </tr>
+          <tr>
+            <td class="sub_border">チョコ</td>
+          </tr>
+          <tr>
+            <td class="main_border">お楽しみ</td>
+            <td class="main_border">120yen</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="3">ベビーカステラ</td>
+            <td class="sub_border">プレーン</td>
+            <td class="sub_border">80yen</td>
+            <td class="main_border" rowspan="3">牛乳、卵、小麦</td>
+            <td class="main_border" rowspan="3">女子硬式テニス部</td>
+          </tr>
+          <tr>
+            <td class="sub_border">チョコ</td>
+            <td class="main_border" rowspan="2">100yen</td>
+          </tr>
+          <tr>
+            <td class="main_border">はちみつ</td>
+          </tr>
+
+          <tr>
+            <td class="main_border type">トルネードポテト</td>
+            <td class="main_border"></td>
+            <td class="main_border">120yen</td>
+            <td class="main_border">卵、小麦、乳、大豆、鶏肉</td>
+            <td class="main_border">ハンドボール部</td>
+          </tr>
+
+          <tr>
+            <td class="main_border type">たません</td>
+            <td class="main_border"></td>
+            <td class="main_border">80yen</td>
+            <td class="main_border">卵、小麦、えび、大豆、米、たこ</td>
+            <td class="main_border">剣道部</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="3">ラーメン</td>
+            <td class="sub_border">醤油ラーメン</td>
+            <td class="main_border" rowspan="3">200yen</td>
+            <td class="sub_border">大豆、鶏肉、ごま、小麦、ゼラチン、乳、卵、豚肉</td>
+            <td class="main_border" rowspan="3">卓球部</td>
+          </tr>
+          <tr>
+            <td class="sub_border">塩ラーメン</td>
+            <td class="sub_border">大豆、ごま、小麦、ゼラチン、乳、卵、豚肉</td>
+          </tr>
+          <tr>
+            <td class="main_border">豚骨ラーメン</td>
+            <td class="main_border">豚肉、ごま、小麦、乳、大豆、鶏肉、ゼラチン、卵</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="2">揚げアイス</td>
+            <td class="sub_border">バニラ</td>
+            <td class="main_border" rowspan="2">100yen</td>
+            <td class="main_border" rowspan="2">牛乳、卵、小麦、(大豆)</td>
+            <td class="main_border" rowspan="2">水泳部</td>
+          </tr>
+          <tr>
+            <td class="main_border">チョコ</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="2">大学芋</td>
+            <td class="sub_border">1個</td>
+            <td class="sub_border">100yen</td>
+            <td class="main_border" rowspan="2"></td>
+            <td class="main_border" rowspan="2">空手道部</td>
+          </tr>
+          <tr>
+            <td class="main_border">2個</td>
+            <td class="main_border">180yen</td>
+          </tr>
+
+          <tr>
+            <td class="main_border type">カレー</td>
+            <td class="main_border"></td>
+            <td class="main_border">160yen</td>
+            <td class="main_border">小麦、牛肉、豚肉、鶏肉</td>
+            <td class="main_border">山岳部</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="2">茶菓子</td>
+            <td class="sub_border">ドリンク各種</td>
+            <td class="sub_border">60yen</td>
+            <td class="sub_border">モモ、リンゴ、牛乳、大豆、ナッツ（アーモンド）</td>
+            <td class="main_border" rowspan="2">朝鮮文化研究会</td>
+          </tr>
+
+          <tr>
+            <td class="main_border">ドリンク+茶菓子セット</td>
+            <td class="main_border">80yen</td>
+            <td class="main_border">モモ、リンゴ、牛乳、大豆、ナッツ（アーモンド）、落花生、小麦</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="2">柏餅</td>
+            <td class="sub_border">柏餅+抹茶</td>
+            <td class="sub_border">140yen</td>
+            <td class="main_border" rowspan="2"></td>
+            <td class="main_border" rowspan="2">茶華道部</td>
+          </tr>
+
+          <tr>
+            <td class="main_border">柏餅（テイクアウト）</td>
+            <td class="main_border">120yen</td>
+          </tr>
+
+          <tr>
+            <td class="type main_border" rowspan="4">クッキー</td>
+            <td class="sub_border">プレーン</td>
+            <td class="sub_border">40yen</td>
+            <td class="main_border" rowspan="4">卵、乳、小麦</td>
+            <td class="main_border" rowspan="4">家庭部</td>
+          </tr>
+          <tr>
+            <td class="sub_border">ココア</td>
+            <td class="main_border" rowspan="3">60yen</td>
+          </tr>
+          <tr>
+            <td class="sub_border">チョコ</td>
+          </tr>
+          <tr>
+            <td class="main_border">紅茶</td>
+          </tr>
+
+          <tr>
+            <td class="main_border type">ジュース</td>
+            <td class="main_border">ジュース各種</td>
+            <td class="main_border">60yen</td>
+            <td class="main_border"></td>
+            <td class="main_border">文化祭スタッフ</td>
+          </tr>
+
+          <tr>
+            <td class="main_border type">珈琲</td>
+            <td class="main_border"></td>
+            <td class="main_border">100yen</td>
+            <td class="main_border"></td>
+            <td class="main_border">PTA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  
+  <footer class="footer">
+    <div class="container footer-inside">
+
+      <section class="footer-access">
+        <div class="footer-access-route">
+          <h4>長田高校</h4>
+          <section>
+            <h5>神戸高速線</h5>
+            <span>高速長田駅から徒歩15分</span>
+          </section>
+          <section>
+            <h5>市営地下鉄</h5>
+            <span>長田駅から徒歩15分</span>
+          </section>
+          <section>
+            <h5>JR</h5>
+            <span>兵庫駅から市バス(4系統)で長田神社前<br>徒歩5分</span>
+          </section>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.3476875105953!2d135.1431847291915!3d34.67008629877766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000858f683ffc87%3A0x9f05c21ab04e7f09!2z5YW15bqr55yM56uL6ZW355Sw6auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1552483901762" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+  
+      <section class="footer-contact">
+        <h4>お問い合わせ</h4>
+        <table>
+          <tr>
+            <td>文化祭スタッフ</td>
+            <td><a target="blank" href="mailto:ngtfesstaff@gmail.com">Gmail</a></td>
+          </tr>
+          <tr>
+            <td class="next_topic">長田高校</td>
+            <td><a target="blank" href="http://www.hyogo-c.ed.jp/~nagata-hs/">ホームページ</a></td>
+          </tr>
+        </table>
+      </section>
+  
+      <span class="copyright">Copyright © 長田高校文化祭スタッフ All Rights Reserved.</span>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="../script/main.js"></script>
+  <script type="text/javascript" src="./script/delighters.min.js"></script>
+</body>
+</html>
+
+
