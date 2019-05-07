@@ -711,6 +711,8 @@ header h2 {
 
 .p-map-tab {
   overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 .p-map-tab__radio-button {
