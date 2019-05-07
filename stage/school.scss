@@ -55,8 +55,11 @@
                     height: $minute*105;
                 }
                 .band {
-                    height: $minute*55;
-                    line-height: $minute*55;
+                    height: $minute*45;
+                    line-height: $minute*45;
+                }
+                .break_3 {
+                    height: $minute*10;
                 }
                 .dance_club {
                     height: $minute*30;
@@ -86,7 +89,3 @@
 }
 
 @include time_table(2px);
-
-// @media (min-widh: 760px) {
-//     @include time_table(3px);
-// }
