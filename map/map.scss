@@ -1,9 +1,18 @@
 @import "../templates/base";
+.container-title {
+    padding-bottom: 10px;
+}
 
 .pamphlet {
     padding: 20px 0;
     &-img {
         width: 100%;
+    }
+
+    .please_tap {
+        margin-top: 70px;
+        padding-top: 10px;
+        border-top: 1px solid $theme;
     }
 }
 
