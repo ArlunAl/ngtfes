@@ -60,7 +60,7 @@
     <h2>スタンプラリー/一年生企画</h2>
   </header>
 
-  <main>
+  <main class="stamp_rally">
     <div class="container about">
       <div class="container-title">
         <h3>About</h3>
@@ -69,9 +69,9 @@
 
       <div class="about-intro">
         <p>一年生による熱き戦い……！！<br>"討伐の証"を持って、長田高校を駆け巡れ！！</p>
-        <!-- <div class="video_box"> -->
-        <video src="../imgs/stamp_rally_intro.mp4" preload="auto" controls></video>
-        <!-- </div> -->
+        <div class="video_box">
+          <video src="../imgs/stamp_rally_intro.mp4" preload="auto" controls poster="../imgs/stamp_rally_videoimage.png"></video>
+        </div>
       </div>
     </div>
 
@@ -83,7 +83,7 @@
 
       <div class="how_to-people common">
         <h4>＜一般のお客様＞</h4>
-        <ul>
+        <ul class="how_to-people-ul">
           <li>この"討伐の証"を持とう！！</li>
           <li>各地にあるクイズスポットでクイズに正解してスタンプをゲットしよう！！</li>
           <li>各地にある展示教室においてあるスタンプで「展示」と書かれた枠にスタンプを押そう！！</li>
@@ -93,7 +93,7 @@
 
       <div class="how_to-people student">
         <h4>＜長田生＞</h4>
-        <ul>
+        <ul class="how_to-people-ul">
           <li>“討伐の証”を持とう！！</li>
           <li>各地にあるクイズスポットでクイズに正解してスタンプをゲットしよう！！</li>
           <li>各地にある展示教室においてあるスタンプで「展示」と書かれた枠にスタンプを押そう！！</li>
@@ -111,7 +111,7 @@
       </div>
 
       <p>タップするとダウンロードされます。</p>
-      <a href="../imgs/stamp_rally_map.jpg"><img class="place-map_img" src="../imgs/stamp_rally_map.jpg" alt="map"></a>
+      <a href="../imgs/stamp_rally_map.jpg" target="blank"><img class="place-map_img" src="../imgs/stamp_rally_map.jpg" alt="map"></a>
     </div>
 
     <div class="container rule">
@@ -176,7 +176,6 @@
   </footer>
 
   <script type="text/javascript" src="../script/main.js"></script>
-  <script type="text/javascript" src="./script/delighters.min.js"></script>
 </body>
 </html>
 
