@@ -1,1 +1,41 @@
-@import "../templates/base"
+@import "../templates/base";
+
+header {
+    h2 {
+        font-size: 22px;
+    }
+}
+
+.about {
+    &-intro {
+        video {
+            width: 100%;
+        }
+    }
+}
+
+.how_to {
+    &-people {
+        ul {
+            padding: 20px;
+        }
+    }
+    .common {
+        padding-top: 10px;
+    }
+    .student {
+        padding-top: 35px;
+    }
+}
+
+.place {
+    &-map_img {
+        width: 100%;
+    }
+}
+
+.rule {
+    ul {
+        padding: 0 20px 20px;
+    }
+}
