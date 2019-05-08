@@ -16,6 +16,17 @@
     }
 }
 
+.modal_window1-text {
+    a {
+        color: $gray;
+        border-bottom: 1px solid $gray;
+    }
+    a:hover {
+        color: black;
+        border-color: black;
+    }
+}
+
 .p-map-tab {
     overflow: hidden;
     height: 100%;
