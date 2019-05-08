@@ -1,5 +1,12 @@
 @import "../templates/base";
 
+.pamphlet {
+    padding: 20px 0;
+    &-img {
+        width: 100%;
+    }
+}
+
 .p-map-tab {
     overflow: hidden;
     height: 100%;
