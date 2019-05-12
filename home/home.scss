@@ -68,6 +68,10 @@
         height: 40px;
         padding-top: 15px;
         text-align: center;
+        transition: background-color .3s;
+    }
+    a:hover {
+        background-color: $accent;
     }
 }
 
