@@ -54,9 +54,11 @@
 
 .survey {
     padding-top: 80px;
-    p {
+    .p1 {
         font-size: 18px;
-        padding-bottom: 20px;
+    }
+    .p2 {
+        padding-bottom: 40px;
     }
     a {
         display: inline-block;
