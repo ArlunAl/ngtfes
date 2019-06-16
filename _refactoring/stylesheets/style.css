@@ -1020,62 +1020,6 @@ header {
   .shoplist .sub_border {
     border-bottom: .5px solid #aaaaaa; }
 
-.stage_time_table .container-title {
-  padding-bottom: 20px; }
-  @media (max-width: 374px) {
-    .stage_time_table .container-title h3 {
-      font-size: 40px; } }
-
-.stage_time_table .please_tap {
-  font-size: 17px;
-  padding-bottom: 40px; }
-
-.stage_time_table .time_table {
-  display: flex; }
-  .stage_time_table .time_table table {
-    border-collapse: separate; }
-  .stage_time_table .time_table caption {
-    font-size: 25px;
-    padding-bottom: 10px; }
-  .stage_time_table .time_table td {
-    border: 1px solid #fafafa;
-    box-sizing: border-box;
-    color: #fafafa;
-    background-color: #333333;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 0; }
-    .stage_time_table .time_table td a {
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      vertical-align: middle;
-      transition: background-color 0.2s; }
-    .stage_time_table .time_table td a:hover {
-      background-color: #009db4; }
-  .stage_time_table .time_table .break {
-    background-color: #fafafa; }
-  .stage_time_table .time_table-time {
-    width: 20%;
-    margin-top: 35px; }
-    .stage_time_table .time_table-time td {
-      vertical-align: top;
-      background-color: #fafafa;
-      color: #333333; }
-  .stage_time_table .time_table-hall {
-    width: 40%;
-    border: 2px solid #009db4; }
-    .stage_time_table .time_table-hall caption {
-      color: #009db4; }
-  .stage_time_table .time_table-outdoor {
-    width: 40%;
-    border: 2px solid #e20700; }
-    .stage_time_table .time_table-outdoor caption {
-      color: #e20700; }
-  @media (min-width: 760px) {
-    .stage_time_table .time_table {
-      font-size: 20px; } }
-
 .stage_time_table .time_table-hall .break_1 {
   height: 40px; }
 
@@ -1209,6 +1153,62 @@ header {
   @media (max-width: 370px) {
     .stage_time_table .time_table-outdoor .crossdressing {
       letter-spacing: -2px; } }
+
+.stage_time_table .container-title {
+  padding-bottom: 20px; }
+  @media (max-width: 374px) {
+    .stage_time_table .container-title h3 {
+      font-size: 40px; } }
+
+.stage_time_table .please_tap {
+  font-size: 17px;
+  padding-bottom: 40px; }
+
+.stage_time_table .time_table {
+  display: flex; }
+  .stage_time_table .time_table table {
+    border-collapse: separate; }
+  .stage_time_table .time_table caption {
+    font-size: 25px;
+    padding-bottom: 10px; }
+  .stage_time_table .time_table td {
+    border: 1px solid #fafafa;
+    box-sizing: border-box;
+    color: #fafafa;
+    background-color: #333333;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0; }
+    .stage_time_table .time_table td a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      vertical-align: middle;
+      transition: background-color 0.2s; }
+    .stage_time_table .time_table td a:hover {
+      background-color: #009db4; }
+  .stage_time_table .time_table .break {
+    background-color: #fafafa; }
+  .stage_time_table .time_table-time {
+    width: 20%;
+    margin-top: 35px; }
+    .stage_time_table .time_table-time td {
+      vertical-align: top;
+      background-color: #fafafa;
+      color: #333333; }
+  .stage_time_table .time_table-hall {
+    width: 40%;
+    border: 2px solid #009db4; }
+    .stage_time_table .time_table-hall caption {
+      color: #009db4; }
+  .stage_time_table .time_table-outdoor {
+    width: 40%;
+    border: 2px solid #e20700; }
+    .stage_time_table .time_table-outdoor caption {
+      color: #e20700; }
+  @media (min-width: 760px) {
+    .stage_time_table .time_table {
+      font-size: 20px; } }
 
 header h2 {
   font-size: 22px; }
