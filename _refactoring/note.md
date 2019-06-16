@@ -8,11 +8,11 @@ mindBEMding
 
 - root
     - *.html
-    - css
-        - style.scss
+    - stylesheet
         - *.scss
+        - style.scss
         - style.css
-    - js
+    - script
         - *.js
     - assets
         - 素材.*
