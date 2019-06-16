@@ -1,0 +1,83 @@
+@import "../templates/base";
+
+.stage_time_table {
+    .container-title {
+        padding-bottom: 20px;
+        
+        h3 {
+            @media (max-width: 374px) {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .please_tap {
+        font-size: 17px;
+        padding-bottom: 40px;
+    }
+
+    .time_table {
+        display: flex;
+
+        table {
+            border-collapse: separate;
+        }
+        caption {
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        td {
+            border: 1px solid $white;
+            box-sizing: border-box;
+            color: $white;
+            background-color: $gray;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 0;
+
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+                transition: background-color 0.2s;
+            }
+            a:hover {
+                background-color: $accent;
+            }
+        }
+        .break {
+            background-color: $white;
+        }
+
+        &-time {
+            width: 20%;
+            margin-top: 35px;
+
+            td {
+                vertical-align: top;
+                background-color: $white;
+                color: $gray;
+            }
+        }
+        
+        &-hall {
+            caption {
+                color: $accent;
+            }
+            width: 40%;
+            border: 2px solid $accent;
+        }
+        &-outdoor {
+            caption {
+                color: $theme;
+            }
+            width: 40%;
+            border: 2px solid $theme;
+        }
+
+        @media (min-width: 760px) {
+            font-size: 20px;
+        }
+    }
+}

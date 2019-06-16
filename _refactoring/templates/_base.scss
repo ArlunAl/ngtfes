@@ -1,0 +1,142 @@
+$theme: #e20700;
+$accent: #009db4;
+$white: #fafafa;
+$gray: #333333;
+
+$title: "Anton", sans-serif;
+
+body {
+    font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    background-color: $white;
+    color: $gray;
+
+    p {
+        padding: 10px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+}
+
+
+
+.container {
+    margin: 30px auto 40px auto;
+    padding: 30px 20px;
+    overflow: hidden;
+
+    &-title {
+        padding-bottom: 40px;
+        color: $theme;
+        h3 {
+            font-family: $title;
+            font-size: 50px;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 376px) {
+    .container {
+        width: 335px;
+    }
+}
+
+@media (min-width: 480px) {
+    .container {
+        width: 420px;
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 520px;
+    }
+}
+
+@media (min-width: 760px) {
+    .container {
+        width: 700px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        width: 900px;
+        // padding: 80px 20px 90px 20px;
+        margin: 50px auto 60px auto;
+        padding: 50px 20px;
+
+        &-title {
+            h3 {
+                font-size: 70px;
+                padding-bottom: 20px;
+            }
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+
+.button {
+    display: inline-block;
+    height: 35px;
+    font-size: 15px;
+    background-color: $gray;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    transition: background-color 0.2s;
+    
+    a {
+        width: 100%;
+        display: inline-block;
+        padding-top: 5px;
+        height: 30px;
+    }
+
+    @media (min-width: 1000px) {
+        height: 45px;
+        font-size: 20px;
+
+        a {
+            height: 35px;
+            padding-top: 10px;
+        }
+    }
+}
+.button:hover {
+    background-color: $accent;
+}
+
+
+.flex {
+    display: -ms-flex;
+    display: flex;
+}
+
+
+@import "header";
+@import "keyframes";
+@import "nav";
+@import "modal_window";
+@import "footer";

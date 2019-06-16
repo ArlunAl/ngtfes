@@ -1,0 +1,23 @@
+header {
+    height: 90px;
+    padding: 0 20px;
+    background-image: url("../imgs/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+
+    h1 {
+        font-family: $title;
+        font-size: 38px;
+        padding-top: 20px;
+
+        @media (max-width: 360px) {
+            font-size: 33px;
+        }
+    }
+    
+    h2 {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+}

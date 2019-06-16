@@ -1,0 +1,138 @@
+@import "../../templates/base";
+
+// みんなの色のクラス
+.zakku {
+    color: #42b6f4;
+}
+.nomi {
+    color: #ff0505;
+}
+.yagichin {
+    color: #ff7d05;
+}
+.chiharun {
+    color: #ff7d05;
+}
+.nonchan {
+    color: #05bcff;
+}
+.asumin {
+    color: #f20045;
+}
+.nrRoute {
+    color: #2687e8;
+}
+.siotaioukeisio {
+    color: #2ee869;
+}
+.arlun {
+    color: #ce000d;
+}
+.chartsiki {
+    color: #d00041;
+}
+.yuipon {
+    color: #9e42e5;
+}
+.nyugyu {
+    color: #68a2ff;
+}
+.ackey {
+    color: #a8bf93;
+}
+.shimon {
+    color: #0a0475;
+}
+.noppi {
+    color: #d782ff;
+}
+.koji {
+    color: #000000;
+}
+.okutan {
+    color: #000000;
+}
+.sakura {
+    color: #a409ed;
+}
+.otoki {
+    color: #3ae8ff;
+}
+.handakun {
+    color: #ff8623;
+}
+.be-to- {
+    color: #ff8623;
+}
+
+
+
+.nav {
+    .menu {
+        background-image: url("../../imgs/footer_img.png");
+    }
+}
+header {
+    background-image: url(../../imgs/header.png);
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.intro {
+    padding-bottom: 20px;
+
+    // @media (min-width: 760px) {
+    //     .mobile {
+    //         display: none;
+    //     }
+    // }
+}
+
+.icon {
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+
+    @media (min-width: 760px) {
+        width: 25%;
+    }
+}
+
+.interview_text {
+    padding-bottom: 20px;
+
+    .q_and_a {
+        padding-bottom: 20px;
+
+        .question {
+            border-bottom: 1px solid $gray;
+        }
+
+        .name {
+            padding-right: 10px;
+        }
+    }
+}
+
+.button {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    background-color: $gray;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+
+    @media (min-width: 1000px) {
+        height: 45px;
+        line-height: 45px;
+        font-size: 20px;
+    }
+}
+.button:hover {
+    background-color: $accent;
+}

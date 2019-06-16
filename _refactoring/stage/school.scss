@@ -1,0 +1,91 @@
+@import "temp";
+
+@mixin time_table($minute) {
+    .stage_time_table {
+        .time_table {
+            &-hall {
+                .break_1 {
+                    height: $minute*15;
+                }
+                .music {
+                    height: $minute*60;
+                    line-height: $minute*60;
+                }
+                .break_2 {
+                    height: $minute*15;
+                }
+                .theater {
+                    height: $minute*60;
+                    line-height: $minute*60;
+                }
+                .break_3 {
+                    height: $minute*90;
+                }
+                .brass_band {
+                    height: $minute*60;
+                    line-height: $minute*60;
+                }
+                .break_4 {
+                    height: $minute*30 + 8px;
+                }
+            }
+    
+            &-time {
+                td {
+                    height: $minute*60;
+                }
+                .fifteen {
+                    height: $minute*30;
+                }
+            }
+    
+            &-outdoor {
+                .free_stage {
+                    height: $minute*15;
+                    line-height: $minute*15;
+                }
+                .break_1 {
+                    height: $minute*25;
+                }
+                .comedy {
+                    height: $minute*10;
+                    line-height: $minute*10;
+                }
+                .break_2 {
+                    height: $minute*105;
+                }
+                .band {
+                    height: $minute*45;
+                    line-height: $minute*45;
+                }
+                .break_3 {
+                    height: $minute*10;
+                }
+                .dance_club {
+                    height: $minute*30;
+                    line-height: $minute*30;
+                }
+                .break_4 {
+                    height: $minute*15;
+                }
+                .claims_of_minors {
+                    height: $minute*30;
+                    line-height: $minute*30;
+                }
+                .break_5 {
+                    height: $minute*20;
+                }
+                .crossdressing {
+                    height: $minute*25;
+                    line-height: $minute*25;
+
+                    @media (max-width: 370px) {
+                        letter-spacing: -2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include time_table(2px);

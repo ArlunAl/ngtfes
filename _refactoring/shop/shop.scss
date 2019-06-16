@@ -1,0 +1,82 @@
+@import "../templates/base";
+
+.container {
+    overflow-x: scroll;
+}
+
+.play {
+    width: 440px;
+}
+.food {
+    width: 670px;
+}
+
+.shoplist {
+    padding-right: 30px;
+
+    td {
+        padding: 7px 10px;
+        vertical-align: middle;
+    }
+    .type::first-letter {
+        font-size: 20px;
+        color: $theme;
+    }
+    th {
+        font-size: 20px;
+        padding: 7px 10px;
+        border-bottom: 2.5px solid $accent;
+        vertical-align: middle;
+    }
+
+    .kind {
+        width: 120px;
+    }
+    .menu {
+        width: 170px;
+    }
+    .price {
+        width: 50px;
+    }
+    .allergy {
+        width: 230px;
+    }
+    .group {
+        width: 100px;
+    }
+
+
+    @media(min-width: 760px) {
+        width: auto;
+
+        td {
+            padding: 10px 20px;
+        }
+        th {
+            padding: 10px 20px;
+        }
+    
+        .kind {
+            width: 130px;
+        }
+        .menu {
+            width: 250px;
+        }
+        .price {
+            width: 30px;
+        }
+        .allergy {
+            width: 250px;
+        }
+        .group {
+            width: 150px;
+        }
+    }
+
+    .main_border {
+        border-bottom: 2px solid #aaa;
+    }
+    .sub_border {
+        border-bottom: .5px solid #aaaaaa;
+    }
+}
